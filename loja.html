@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Crescer</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+						<i class="icon icon-transport-cart x3"></i></a>	
+						<span class="badge badge-success pull-right">4</span>
+					</li>
+
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+						<i class="icon-envelop5 x3"></i></a>	
+						<span class="badge badge-danger pull-right">4</span>
+					</li>
+
+					<!-- /Quick apps dropdown -->
+				
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-display4"></i> Loja Crescer Livre
+
+
+					<br>
+					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
+					<i class="icon icon-arrow-left16 x1"></i>Voltar
+					</button>
+					
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+			<div class="container-fluid page-content">
+				<div class="row">
+
+					<!-- Cabeçalho -->
+					<div class="col-md-12">
+						<div class="panel panel-flat no-margin">
+							<div class="panel-body">
+								<div class="row text-center">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<h1> <i class="icon icon-cart x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b">Loja Crescer Livre </h1>						
+									</div>	
+									<div class="col-md-12 col-sm-12 col-xs-12 text-center">																	
+
+										<div class="row m-t-15">
+										</div>
+									</div>								
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Cabeçalho -->
+				</div>
+
+			</div>
+
+
+
+		<!-- Filtros -->	
+
+			<div class="container-fluid page-content">
+			<div class="row text-center">				
+
+			<div class="col-md-12 col-sm-12 m-t-15 m-b-20">
+
+
+
+		<!-- Botões Abre Accordion -->
+
+				<div class="panel panel-white no-margin">
+					<div class="panel-heading">
+						
+
+						<div id="btn-filtros" class="btn btn-default no-margin">
+							<a  class="collapsed" data-toggle="collapse" data-parent="#accordion-control" href="#accordion-control-group1">
+								
+								<h1><i class="icon icon-equalizer4"></i> Filtrar Produtos</h1>
+
+							</a>
+						</div>
+
+						<div id="btn-cod-produto" class="btn btn-default no-margin">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion-control" href="#accordion-control-group2">
+								
+								<h1><i class="icon icon-equalizer4"></i> Adicinar Cod. Produto</h1>
+								
+							</a>
+						</div>
+					</div>
+
+		<!-- /Botões Abre Accordion -->
+
+			<!-- Accordion 1 -->
+
+					<div id="accordion-control-group1" class="panel-collapse collapse">
+						<div class="panel-body">
+							
+				<!-- Multiple select 1 -->
+
+					<div class="col-md-4 col-sm-4">
+					
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Categoria Macro</div>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label>Selecione as Categorias</label>
+									<select multiple="multiple" class="select">
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="FL" selected="selected">Florida</option>
+											<option value="MA">Massachusetts</option>
+											<option value="WV">West Virginia</option>
+										</optgroup>
+									</select>
+								</div>
+
+							</div>
+						</div>			
+
+					</div>
+
+				<!-- /Multiple select 1 -->
+
+				<!-- Multiple select 2 -->
+
+					<div class="col-md-4 col-sm-4">
+					
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Subcategorias</div>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label>Selecione as Subcategorias</label>
+									<select multiple="multiple" class="select">
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ" selected="selected">Arizona</option>
+											<option value="CO">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+										</optgroup>
+									</select>
+								</div>
+
+							</div>
+						</div>			
+
+					</div>
+
+				<!-- /Multiple select 2 -->
+
+				<!-- Multiple select 3 -->
+
+					<div class="col-md-4 col-sm-4">
+					
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Específicos</div>
+							</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label>Selecione Especificações</label>
+									<select multiple="multiple" class="select">
+										<optgroup label="Mountain Time Zone">
+											<option value="AZ">Arizona</option>
+											<option value="CO" selected="selected">Colorado</option>
+											<option value="ID">Idaho</option>
+											<option value="WY">Wyoming</option>
+										</optgroup>
+										<optgroup label="Central Time Zone">
+											<option value="AL">Alabama</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="FL">Florida</option>
+											<option value="MA">Massachusetts</option>
+											<option value="WV">West Virginia</option>
+										</optgroup>
+									</select>
+								</div>
+
+							</div>
+						</div>			
+
+					</div>
+
+				<!-- /Multiple select 3 -->
+
+
+				<!-- Botão Filtrar -->
+
+					<div class="col-md-12 col-sm-12">
+					
+					<button type="button" class="btn btn-success btn-lg"><i class="icon icon-arrow-right-6"></i> Filtrar Produtos!</button>
+
+					</div>
+
+
+				<!-- /Botão Filtrar -->
+
+						</div>
+					</div>
+
+			<!-- /Accordion 1 -->
+
+
+
+
+
+			<!-- /Accordion 2 -->
+
+				<div id="accordion-control-group2" class="panel-collapse collapse">
+					<div class="panel-body">
+							
+				<!-- Código do Produto -->
+						<div class="col-md-4 col-sm-4">
+					
+						<div class="form-group">
+									<label class="control-label col-lg-4 text-semibold"><h4>Código do Produto</h4></label>
+									<div class="col-lg-4">
+										<input type="text" class="form-control" placeholder="# Código">
+									</div>
+									<div class="col-lg-4">										
+									</div>	
+						</div>			
+
+						</div>
+				<!-- /Código do Produto -->
+
+				<!-- Quantidade -->
+						<div class="col-md-4 col-sm-4">							
+						<div class="form-group">
+									<label class="control-label col-lg-3 text-semibold"><h4>Quantidade</h4></label>
+									<div class="col-lg-5">
+										<input type="text" value="" class="touchspin-empty quant-produto">
+									</div>	
+									<div class="col-lg-4">										
+									</div>	
+
+						</div>
+						</div>
+				<!-- /Quantidade -->
+
+				<!-- Adcionar ao Carrinhor -->
+
+					<div class="col-md-4 col-sm-4">
+					
+					<button type="button" class="btn btn-success"><i class="icon icon-arrow-right-6"></i> Adicionar ao Carrinho!</button>
+
+					</div>
+
+
+				<!-- /Adcionar ao Carrinhor -->
+
+
+					</div>
+					</div>			
+
+			<!-- /Accordion 2 -->
+
+				</div>
+			</div>
+			</div>
+			</div>
+
+		<!-- /Filtros -->
+
+
+
+
+
+
+		<!-- Lista de Produtos -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+
+					<!-- Product 1 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-7">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Watch #033</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-5 text-right">
+										<div class="x2 no-margin text-success no-line-height">$39.99</div>
+										<div class="text-uppercase text-danger m-l-10"><s>$49.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 1 -->
+
+					
+					<!-- Product 2 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Belt</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">Sem Descontot</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-success no-line-height">$9.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 2 -->
+
+				
+					<!-- Product 3 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-7">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Watch #033</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-5 text-right">
+										<div class="x2 no-margin text-success no-line-height">$39.99</div>
+										<div class="text-uppercase text-danger m-l-10"><s>$49.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 3 -->
+
+					
+					<!-- Product 4 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Belt</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">Sem Descontot</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-success no-line-height">$9.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 4 -->
+
+
+					<!-- Product 5 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-7">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Watch #033</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-5 text-right">
+										<div class="x2 no-margin text-success no-line-height">$39.99</div>
+										<div class="text-uppercase text-danger m-l-10"><s>$49.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 5 -->
+
+					
+					<!-- Product 6 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Belt</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">Sem Descontot</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-success no-line-height">$9.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 6 -->
+
+					
+					<!-- Product 7 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-7">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Watch #033</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-5 text-right">
+										<div class="x2 no-margin text-success no-line-height">$39.99</div>
+										<div class="text-uppercase text-danger m-l-10"><s>$49.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 7 -->
+
+					
+					<!-- Product 8 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Belt</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">Sem Descontot</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-success no-line-height">$9.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 8 -->
+
+				</div>
+
+			</div>
+
+		<!-- /Lista de Produtos -->
+
+
+			<div class="col-md-8 col-sm-8">
+			</div>
+
+		
+			<!-- Pagination -->
+				<div class="col-md-4 col-sm-4 m-b-50">
+						<div class="panel panel-body text-center">
+							<ul class="pagination no-margin-b">
+								<li><a href="#"><i class="icon-arrow-left22"></i></a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="disabled"><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div>
+					</div>
+			<!-- /Pagination -->
+
+
+			<br>
+			<br>
+
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+
+		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+
+		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+
+<!-- Page scripts -->
+<script src="lib/js/pages/ecom/ecom_product.js"></script>
+<script src="lib/js/pages/forms/form_select2.js"></script>
+
+<!-- /Page scripts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+
+	$(document).ready(function() {		
+		$("#btn-filtros").click(function() {
+  		$('#accordion-control-group2').removeClass('in');
+  		$("#btn-filtros").addClass('btn-info');
+  		$("#btn-cod-produto").removeClass('btn-info');
+		});
+
+		$("#btn-cod-produto").click(function() {
+  		$('#accordion-control-group1').removeClass('in');
+  		$("#btn-cod-produto").addClass('btn-info');
+  		$("#btn-filtros").removeClass('btn-info');
+		});
+	});
+
+	</script>
+
+<script src="lib/js/forms/touchspin.min.js"></script>
+<script src="lib/js/pages/forms/form_bootstrap_touchspin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Crescer</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+						<i class="icon icon-transport-cart x3"></i></a>	
+						<span class="badge badge-success pull-right">4</span>
+					</li>
+
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+						<i class="icon-envelop5 x3"></i></a>	
+						<span class="badge badge-danger pull-right">4</span>
+					</li>
+
+					<!-- /Quick apps dropdown -->
+				
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-display4"></i> Página Inicial</div>
+					
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+			<div class="container-fluid page-content">
+				<div class="row">
+
+					<!-- Recompra / Crescer Mais / Total -->
+					<div class="col-md-12">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<div class="row text-center">
+									<div class="col-md-3 col-sm-3 col-xs-12">
+										<p> <img class="img-categoria m-t-10" src="http://sitecrescer.magix.net.br/imagens/pins/black-diamond.png"></p>									
+									</div>
+
+
+									<div class="col-md-9 col-sm-9 col-xs-12 text-center">
+
+									<div class="row">
+											<div class="col-md-12">
+												<h1 class="text-uppercase no-margin-b">GANHOS TOTAIS <span>(Este Ano)</span></h1>
+												<h1 class="text-semibold text-success no-margin-t"><i class="icon icon-coins icon-lg m-b-5"></i> 45,723</h1>
+											</div>
+										</div>									
+
+										<div class="row m-t-15">
+											<div class="col-md-4 col-sm-4 col-xs-4 no-margin border-right border-slate-50 border-right-dashed">
+												<h1 class="text-semibold text-success no-margin-t no-margin-b"><i class="icon icon-dollar icon-lg"></i> 70.000</h1>
+												<h2 class="text-uppercase no-margin-t no-margin-b text-light">Recompra</h2>
+											</div>
+
+											<div class="col-md-4 col-sm-4 col-xs-4 border-right border-slate-50 border-right-dashed">
+												<h1 class="text-semibold text-warning no-margin-t no-margin-b"><i class="icon icon-rating icon-lg"></i> 200.000</h1>
+												<h2 class="text-uppercase no-margin-t no-margin-b text-light">Crescer Mais</h2>
+											</div>
+
+											<div class="col-md-4 col-sm-4 col-xs-4">
+												<h1 class="text-semibold text-info no-margin-t no-margin-b"><i class="icon icon-coins-1 icon-lg"></i> 10.000</h1>
+												<h2 class="text-uppercase no-margin-t no-margin-b text-light">Total R$</h2>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Recompra / Crescer Mais / Total -->
+
+					
+
+					<!-- Dados da Rede -->
+					<div class="col-md-12">
+						<div class="panel panel-flat">							
+							<div class="panel-body">
+								<div class="row text-center">	
+									<div class="col-md-12 col-sm-12 col-xs-12 text-center m-t-10">
+
+										    <div class="col-md-3 col-sm-1 col-xs-0">									        												<h2>Dados da Rede</h2>
+											</div>
+
+										
+											<div class="col-md-3 col-sm-5 col-xs-12">
+												<a href="crescer-juntos.html"><button type="button" data-popup="tooltip" title="Crescer Juntos" data-placement="bottom" class="btn btn-primary btn-xlg btn-dados-rede">
+													<i class="icon icon-tree position-left"></i> 
+													1.200 DLs
+												</button></a>
+											</div>
+
+											<div class="col-md-3 col-sm-5 col-xs-12">
+												<a href="crescer-mais.html"><button type="button" data-popup="tooltip" title="Crescer Mais" data-placement="bottom" class="btn btn-primary btn-xlg btn-dados-rede"> 	25 DLs
+												   <i class="icon icon-chart5 position-right"></i>
+												</button></a>
+											</div>
+
+											<div class="col-md-3 col-sm-1 col-xs-0">	
+												<h5 class="m-t-10">DLs: Downlines</h5>											
+											</div>
+										
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Dados da Rede -->
+
+
+					<!-- Slider -->
+					<div class="col-md-12">
+								<!-- Single image slider -->
+								<div class="panel panel-flat">	
+									<div class="panel-body">
+										<div id="single-image-slider" class="owl-carousel">
+											<div class="item"><img src="http://sitecrescer.magix.net.br/imagens/banner.jpg" alt="Lançamento Nacional"></div>
+											<div class="item"><img src="http://sitecrescer.magix.net.br/imagens/banner.jpg" alt="Lançamento Nacional"></div>
+											<div class="item"><img src="http://sitecrescer.magix.net.br/imagens/banner.jpg" alt="Lançamento Nacional"></div>
+										</div>
+									</div>
+								</div>
+					</div>
+								<!-- /Single image slider -->
+					<!-- Slider -->
+
+
+
+
+				<!-- Ativação -->
+				<div class="col-md-6 col-sm-12 col-xs-12 ativacao-rede">
+					<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title m-t-10 m-b-10 m-l-10 text-semibold"><i class="icon icon-diamond x3"></i>&nbsp;&nbsp; ATIVAÇÃO</h5>
+							</div>
+						<div class="panel-body">
+							<div class="row text-center">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<p> <img class="img-categoria m-t-10" src="img/ativacao-off.png"></p>	
+									<h3 class="text-light">SILVER <br> R$ 540,00</h3>	
+
+									<p class="m-t-20">Auto-ativa:
+									<button type="button" class="btn btn-default">
+										<i class="icon icon-switch-6"></i> OFF
+									</button>
+									</p>	
+
+								</div>
+
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<p> <img class="img-categoria m-t-10" src="img/ativacao-off.png"></p>	
+									<h3 class="text-light">GOLD <br> R$ 1750,00</h3>
+
+									<p class="m-t-20">Auto-ativa:
+									<button type="button" class="btn btn-default">
+										<i class="icon icon-switch-6"></i> OFF
+									</button>
+									</p>	
+
+
+												<!-- Switcher 
+												<div class="checkbox checkbox checkbox-right checkbox-switchery">
+															<label id="2">																
+																Switch in <span class="text-semibold">success</span> context
+																<input id="input-gold" name="input-gold" type="checkbox" class="switchery-success">
+															</label>
+														</div>													
+												 /Switcher  -->
+
+								</div>
+
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<p> <img class="img-categoria m-t-10" src="img/ativacao-vip.png"></p>	
+									<h3 class="text-light">VIP <br> R$ 6540,00</h3>	
+
+									<p class="m-t-20">Auto-ativa:
+									<button type="button" class="btn btn-success">
+										<i class="icon icon-switch-7"> </i> ON
+									</button>	
+									</p>
+
+								</div>
+
+							<div class="col-md-12 col-sm-12 col-xs-12 m-t-20">
+								<button type="button" class="btn btn-default col-md-12 col-sm-12 col-xs-12">Etenda a auto-ativação</button>	
+							</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Ativação -->
+
+
+				<!-- De olho na Rede -->
+				<div class="col-md-6 col-sm-12 col-xs-12 ativacao-rede">
+					<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title m-t-10 m-b-10 m-l-10 text-semibold"><i class="icon icon-database-interlinked x3"></i>&nbsp;&nbsp; DE OLHO NA REDE</h5>
+							</div>
+						<div class="panel-body m-t-5">
+							<div class="row text-center">
+								<div class="col-md-3 col-sm-3 col-xs-6 m-t-25">
+									<h3>SILVER <br> 735</h3>	
+									<button type="button" class="btn btn-default btn-rounded m-t-10 m-b-10"><i class="icon icon-search4"></i></button>
+									<p class="text-light">Visualizar</p>
+								</div>
+
+								<div class="col-md-3 col-sm-3 col-xs-6 m-t-25">
+									<h3>GOLD <br> 82</h3>	
+									<button type="button" class="btn btn-default btn-rounded m-t-10 m-b-10"><i class="icon icon-search4"></i></button>
+									<p class="text-light">Visualizar</p>						
+								</div>
+
+								<div class="col-md-3 col-sm-3 col-xs-6 m-t-25">
+									<h3>VIP <br> 3</h3>		
+									<button type="button" class="btn btn-default btn-rounded m-t-10 m-b-10"><i class="icon icon-search4"></i></button>
+									<p class="text-light">Visualizar</p>						
+								</div>
+
+								<div class="col-md-3 col-sm-3 col-xs-6 m-t-25">
+									<h3>INATIVOS <br> 103</h3>		
+									<button type="button" class="btn btn-default btn-rounded m-t-10 m-b-10"><i class="icon icon-search4"></i></button>
+									<p class="text-light">Visualizar</p>			
+								</div>
+
+
+								<div class="col-md-12 col-sm-12 col-xs-12 m-t-40 m-b-20">
+									<h3 class="m-t-10 m-b-10">Graduação</h3>
+									<div class="progress m-b-10">
+										<span>Green Diamond</span>
+										<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 55%">
+											<span class="sr-only">R$10.000 de R$15.000</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- De olho na Rede -->
+
+
+
+
+
+					<!-- Leads -->
+					<div class="col-md-3 col-sm-6"  style="display: none">
+						<div class="panel panel-flat border-none">
+							<div class="panel-body p-b-10">
+								<div class="row">
+									<div class="col-md-6 col-xs-6">
+										<div id="leads"></div>
+									</div>
+									<div class="col-md-6 col-xs-6 no-padding">
+										<span class="">Total Leads</span>
+										<div class="x3 text-light no-padding no-margin m-t-10 m-b-10">543 <i class="icon-arrow-up16 text-success text-size-large"></i></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Leads -->
+
+					<!-- Payments -->
+					<div class="col-md-3 col-sm-6"  style="display: none">
+						<div class="panel panel-flat border-none">
+							<div class="panel-body p-b-10">
+								<div class="row">
+									<div class="col-md-6 col-xs-6">
+										<div id="payment"></div>
+									</div>
+									<div class="col-md-6 col-xs-6 no-padding">
+										<span class="">Total Payment</span>
+										<div class="x3 text-light no-padding no-margin m-t-10 m-b-10">$6,210</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Payments -->
+
+					<!-- Sales -->
+					<div class="col-md-3 col-sm-6"  style="display: none">
+						<div class="panel panel-flat border-none">
+							<div class="panel-body p-b-10">
+								<div class="row">
+									<div class="col-md-6 col-xs-6">
+										<div id="sales"></div>
+									</div>
+									<div class="col-md-6 col-xs-6 no-padding">
+										<span class="">Total Sales</span>
+										<div class="x3 text-light no-padding no-margin m-t-10 m-b-10">765 <i class="icon-arrow-down16 text-danger text-size-large"></i></div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Sales -->
+
+					<!-- Orders -->
+					<div class="col-md-3 col-sm-6"  style="display: none">
+						<div class="panel panel-flat border-none">
+							<div class="panel-body p-b-10">
+								<div class="col-md-6 col-xs-6">
+									<div class="row">
+										<div id="orders"></div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xs-6 no-padding">
+									<span class="">Total Orders</span>
+									<div class="x3 text-light no-padding no-margin m-t-10 m-b-10">532 <i class="icon-arrow-up16 text-success text-size-large"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<!-- /Orders -->
+				</div>
+
+
+
+
+
+
+
+				<!-- Income & Expenses -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Income & Expenses <small>(Current Year)</small></h5>
+						<div class="elements">
+							<ul class="icons-list">
+								<li><a data-action="collapse" data-popup="tooltip" title="Collapse"></a></li>
+								<li><a data-action="reload" data-popup="tooltip" title="Reload"></a></li>
+								<li><a data-action="close" data-popup="tooltip" title="Close"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="row hidden-xs">
+							<div class="col-md-12 text-right">
+								<div class="button-toolbar">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-default">Week</button>
+										<button type="button" class="btn btn-sm btn-default active">Month</button>
+										<button type="button" class="btn btn-sm btn-default">Year</button>
+									</div>
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-default">Today</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="income"></div>
+				</div>
+				<!-- /Income & Expenses -->
+
+
+
+				<div class="row">
+
+					<!-- Quick Stats -->
+					<div class="col-md-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Quick Stats</h5>
+							</div>
+							<div class="panel-body">
+								<div class="row text-center">
+									<div class="col-md-4 col-sm-4 col-xs-4 p-t-20">
+										<span class="pie-chart monthly" data-percent="86">
+											<span class="pie-percent per_monthly"></span>
+										</span>
+										<h6 class="no-margin-t">Monthly</h6>
+									</div>
+
+									<div class="col-md-4 col-sm-4 col-xs-4 p-t-20">
+										<span class="pie-chart yearly" data-percent="74">
+											<span class="pie-percent per_yearly"></span>
+										</span>
+										<h6 class="no-margin-t">Yearly</h6>
+									</div>
+
+									<div class="col-md-4 col-sm-4 col-xs-4 p-t-20">
+										<span class="pie-chart total" data-percent="54">
+											<span class="pie-percent per_total"></span>
+										</span>
+										<h6 class="no-margin-t">Total</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Quick Stats -->
+
+					<!-- Annual Growth -->
+					<div class="col-md-4 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Annual Growth</h5>
+							</div>
+							<div class="panel-body">
+								<div id="growth"></div>
+							</div>
+						</div>
+					</div>
+					<!-- /Annual Growth -->
+
+					<!-- Website Stats -->
+					<div class="col-md-4 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Website Stats</h5>
+							</div>
+							<div class="panel-body">
+								<div id="stats" style="margin: 0 auto"></div>
+							</div>
+						</div>
+					</div>
+					<!-- /Website Stats -->
+				</div>
+
+				<div class="row">
+
+					<!-- Recent Activities -->
+					<div class="col-md-3 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">
+								Recent Activities
+								</h5>
+							</div>
+							<div class="panel-body p-l-20 p-b-20">
+								<div class="streamline">
+									<div class="sl-item sl-primary">
+										<div class="sl-content">
+											<small class="text-muted"><i class="icon-user-plus position-left"></i>2 mins ago</small>
+											<p>Jane Elliott added a new friend.</p>
+										</div>
+									</div>
+
+									<div class="sl-item sl-danger">
+										<div class="sl-content">
+											<small class="text-muted"><i class="icon-pencil5 position-left"></i>10 mins ago</small>
+											<p>Florence Douglas posted on your timeline.</p>
+										</div>
+									</div>
+
+									<div class="sl-item sl-success">
+										<div class="sl-content">
+											<small class="text-muted"><i class="icon-user position-left"></i>14 mins ago</small>
+											<p>Jacqueline Howell sent you a friend request.</p>
+										</div>
+									</div>
+
+									<div class="sl-item sl-warning">
+										<div class="sl-content">
+											<small class="text-muted"><i class="icon-calendar position-left"></i>20 mins ago</small>
+											<p>Sara has invited you for an event.</p>
+										</div>
+									</div>
+
+									<div class="sl-item sl-primary">
+										<div class="sl-content">
+											<small class="text-muted"><i class="icon-user-plus position-left"></i>1 day ago</small>
+											<p>Ann Porter added a new friend.</p>
+										</div>
+									</div>
+
+									<div class="sl-item sl-success">
+										<div class="sl-content">
+											<small class="text-muted"><i class="icon-comments position-left"></i>1 day ago</small>
+											<p>Jacqueline commented on your post.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Recent Activities -->
+
+					<!-- Recent Comments -->
+					<div class="col-md-4 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading p-b-5">
+								<h5 class="panel-title">
+								Recent Comments
+								</h5>
+							</div>
+
+							<ul class="media-list media-list-linked m-b-20">
+								<li class="media bg-light-lighter">
+									<a href="#" class="media-link">
+										<div class="media-left">
+											<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-heading">Jane Elliott <span class="media-annotation">4 hours ago</span></h6>
+										Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+									</a>
+								</li>
+
+								<li class="media">
+									<a href="#" class="media-link">
+										<div class="media-left">
+											<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-heading">Florence Douglas <span class="media-annotation">3 hours ago</span></h6>
+										Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. In enim justo, rhoncus ut.
+										</div>
+									</a>
+								</li>
+
+								<li class="media bg-light-lighter">
+									<a href="#" class="media-link">
+										<div class="media-left">
+											<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-heading">Jacqueline Howell <span class="media-annotation">2 hours ago</span></h6>
+										Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum.
+										</div>
+									</a>
+								</li>
+
+								<li class="media">
+									<a href="#" class="media-link">
+										<div class="media-left">
+											<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+										</div>
+
+										<div class="media-body">
+											<h6 class="media-heading">Eugine Turner <span class="media-annotation">Yesterday, 14:54</span></h6>
+										Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. In enim justo.
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /Recent Comments -->
+
+					<!-- Recent Leads -->
+					<div class="col-md-5 col-sm-12">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Recent leads</h5>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-hover table-striped user-list">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Date</th>
+											<th>Status</th>
+											<th>Priority</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Jane Elliott</td>
+											<td>Jun 14, 2016</td>
+											<td><span class="label label-info">Opened</span></td>
+											<td><span class="label label-danger">High</span></td>
+										</tr>
+
+										<tr>
+											<td>2</td>
+											<td>Florence Douglas</td>
+											<td>Jun 14, 2016</td>
+											<td><span class="label label-success">Closed</span></td>
+											<td><span class="label label-success">Low</span></td>
+										</tr>
+
+										<tr>
+											<td>3</td>
+											<td>Jacqueline Howell</td>
+											<td>Jun 14, 2016</td>
+											<td><span class="label label-info">Opened</span></td>
+											<td><span class="label label-warning">Medium</span></td>
+										</tr>
+
+										<tr>
+											<td>4</td>
+											<td>Eugine Turner</td>
+											<td>Jun 13, 2016</td>
+											<td><span class="label label-danger">Pending</span></td>
+											<td><span class="label label-danger">High</span></td>
+										</tr>
+
+										<tr>
+											<td>5</td>
+											<td>Andrew Brewer</td>
+											<td>Jun 14, 2016</td>
+											<td><span class="label label-danger">Pending</span></td>
+											<td><span class="label label-success">Low</span></td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>Jonaly Smith</td>
+											<td>Jun 12, 2016</td>
+											<td><span class="label label-info">Opened</span></td>
+											<td><span class="label label-success">Low</span></td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>Ann Porter</td>
+											<td>Jun 12, 2016</td>
+											<td><span class="label label-info">Opened</span></td>
+											<td><span class="label label-success">Low</span></td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>John Deo</td>
+											<td>Jun 11, 2016</td>
+											<td><span class="label label-danger">Pending</span></td>
+											<td><span class="label label-success">Low</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- /Recent Leads -->
+				</div>
+
+				<div class="row">
+
+					<!-- World Map -->
+					<div class="col-md-5">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">World Map</h5>
+							</div>
+							<div class="panel-body">
+								<div class="map-container map-world-markers" style="max-height:250px;"></div>
+							</div>
+						</div>
+					</div>
+					<!-- /World Map -->
+
+					<!-- Weather -->
+					<div class="col-md-7">
+						<div class="panel panel-flat no-border">
+							<img src="http://via.placeholder.com/700x200" class="img-responsive img-100" alt="">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-5 col-sm-5">
+										<p class="text-bold text-uppercase no-margin">Today</p>
+										<div class="row-fluid no-margin">
+											<div class="col-md-3 col-sm-3 col-xs-3 no-margin">
+												<div class="wi wi-day-snow wi-30 p-l-20 p-t-15 text-warning"></div>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9 no-margin">
+												<div class="weather-cent text-warning"><span class="text-semibold">22</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-12 p-r-20">
+										<div class="row">
+											<div class="col-md-2 col-xs-2 col-sm-2">
+												<p class="text-bold text-uppercase no-margin">Mon</p>
+												<div class="wi wi-day-snow wi-20 p-l-20 text-indigo"></div>
+												<div class="weather-cent wi-small"><span class="text-bold">17</span></div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<p class="text-bold text-uppercase no-margin">Tue</p>
+												<div class="wi wi-day-cloudy-windy wi-20 p-l-20 text-lime"></div>
+												<div class="weather-cent wi-small"><span class="text-bold">19</span></div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<p class="text-bold text-uppercase no-margin">Wed</p>
+												<div class="wi wi-day-lightning wi-20 p-l-20 text-amber"></div>
+												<div class="weather-cent wi-small"><span class="text-bold">18</span></div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<p class="text-bold text-uppercase no-margin">Thur</p>
+												<div class="wi wi-night-rain-mix wi-20 p-l-20 text-blue"></div>
+												<div class="weather-cent wi-small"><span class="text-bold">21</span></div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<p class="text-bold text-uppercase no-margin">Fri</p>
+												<div class="wi wi-night-rain wi-20 p-l-20 text-slate"></div>
+												<div class="weather-cent wi-small"><span class="text-bold">19</span></div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<p class="text-bold text-uppercase no-margin">Sat</p>
+												<div class="wi wi-sunrise wi-20 p-l-20 text-success"></div>
+												<div class="weather-cent wi-small"><span class="text-bold">18</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Weather -->
+				</div>
+
+			</div>
+
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+
+		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+
+		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/core/jquery/jquery.easing.min.js"></script>
+<script src="lib/js/charts/jquery.easypiechart.min.js"></script>
+<script src="lib/js/charts/raphael-min.js"></script>
+<script src="lib/js/charts/morris.min.js"></script>
+<script src="lib/js/charts/highcharts.js"></script>
+<script src="lib/js/charts/highcharts-more.js"></script>
+<script src="lib/js/maps/jvectormap/jvectormap.min.js"></script>
+<script src="lib/js/maps/jvectormap/map_files/world.js"></script>
+<script src="lib/js/pages/dashboard.js"></script>
+<!-- /Page scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/pages/animations.js"></script>
+<!-- /Page scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/plugins/owl.carousel.js"></script>
+<script src="lib/js/pages/extensions/extension_owl_carousel.js"></script>
+<!-- /Page scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/pages/forms/form_switchery.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>
