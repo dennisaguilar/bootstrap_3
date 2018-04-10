@@ -6259,8 +6259,12 @@ body {
 .main-nav .navbar-left .left-branding>li {
     float: left;
 }
+.main-nav .navbar-left {
+    width: 250px;
+}
 .main-nav .navbar-left .logo {
-    background: url(../../img/logo-dark.png) no-repeat 0 0;
+    background: url(../../img/crescer.png) no-repeat 0 0;
+        background-size: contain;
 }
 .main-nav .navbar-right {
     margin-right: 10px;
@@ -6997,7 +7001,7 @@ body .menu .acc-parent.active .acc-icon:after {
     border-left: 1px dotted rgba(134, 159, 177, 0.5);
     content: ""}
 .sidebar .sidebar-accordion>li>ul li a.active {
-    background: none;
+    background: #bc0824;
 }
 .sidebar .acc-icon {
     width: 12px;
@@ -7909,7 +7913,7 @@ ul.colors-demo li div.value {
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     position: relative;
-    top: -5px;
+    top: -10px;
 }
 .open>.btn-default.dropdown-toggle:hover, .open>.btn-default.dropdown-toggle:focus, .open>.btn-default.dropdown-toggle.focus {
     color: #1C2B36;
@@ -9578,7 +9582,8 @@ i.icon-xlg {
     background-color: rgba(0, 0, 0, 0.2);
 }
 .label-danger {
-    border-color: #F44336;
+    border-color: #ff0000 !important;
+    background-color: #ff0000 !important;
 }
 .label-danger[href]:hover, .label-danger[href]:focus {
     background-color: rgba(0, 0, 0, 0.2);
@@ -10580,7 +10585,7 @@ a.list-group-item-danger:hover, a.list-group-item-danger:focus, .list-group-item
     font-smoothing: antialiased;
 }
 .icons-list a[data-toggle="dropdown"]:after {
-    content: "";
+    //content: "";
     speak: none;
     font-family: "icomoon";
     font-size: 16px;
@@ -22284,6 +22289,7 @@ body>.ui-pnotify-modal-overlay {
     width: 100%;
     min-height: .01%;
     overflow-x: auto;
+    min-height: 300px !important;
 }
 @media only screen and (max-width: 1247px) {
     .datatable-scroll {
@@ -28490,10 +28496,10 @@ div#txt {
     display: table;
     position: absolute;
     background-color: #1C2B36;
-    background-image: url(../../img/demo/login.jpg);
-    background: linear-gradient(rgba(28, 43, 54, 0.5),  rgba(28, 43, 54, 0.5)), url(../../img/demo/login.jpg);
+    background-image: url(../../img/bg-login.jpg);
+    background: url(../../img/bg-login.jpg);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size: cover;
 }
 .auth-container .center-block {
@@ -28503,7 +28509,7 @@ div#txt {
 .auth-container .auth-module {
     max-width: 100%;
     width: 290px;
-    border-top: 5px solid #1C2B36;
+    border-top: 5px solid #a4a9b0;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -28542,7 +28548,7 @@ div#txt {
     -moz-border-bottom-left-radius: 2px;
     border-bottom-left-radius: 2px;
     cursor: pointer;
-    background: #1C2B36;
+    background: #a4a9ae;
     color: #fff;
 }
 .auth-container .auth-module .toggle i {
@@ -39611,7 +39617,7 @@ div#txt {
 
 @media only screen and (max-width: 1024px) {
    .main-nav .navbar-left .logo    { 
-    width: 95px;
+    width: 150px;
     }
 
     aside.menu.sidebar {
@@ -39732,4 +39738,15 @@ td.nome {
     color: #fff !important;
     background-color: #4caf50 !important;
     border-color: #4caf50 !important;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d60323 !important;
+    border-color: #d60323 !important;
+}
+
+
+.label-warning {
+    background-color: #ff845d !important;
 }
