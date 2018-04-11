@@ -49,7 +49,7 @@
 					<div class="col-md-6 col-md-offset-3">
 						<div class="search-input-addon">
 							<span class="addon-icon"><i class="icon-search4"></i></span>
-							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+							<input type="text" class="form-control top-search-input" placeholder="O que deseja encontrar?...">
 						</div>
 					</div>
 				</div>
@@ -137,7 +137,8 @@
 			<!--Page Header-->
 			<div class="header">
 				<div class="header-content">
-					<div class="page-title"><i class="icon-display4"></i>Cadastros Pendentes
+					<div class="page-title"><i class="icon-display4"></i> Eventos
+
 					<br>
 					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
 					<i class="icon icon-arrow-left16 x1"></i>Voltar
@@ -156,23 +157,21 @@
 							<div class="panel-body">
 								<div class="row text-center">
 									<div class="col-md-12 col-sm-12 col-xs-12">
-										<h1> <i class="icon icon-user-star x6"></i></h1>
-										<h1 class="text-uppercase no-margin-b">Cadastros Pendentes</h1>						
+										<h1> <i class="icon icon-big-sunglasses x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b">Eventos</h1>						
 									</div>								
 								</div>
 							</div>
 						</div>		
 					<!-- /Recompra / Crescer Mais / Total -->
 
-
-
-
 			<!-- Export options -->
 				<div class="panel panel-flat">
 					<div class="table-responsive">
-						<table class="table datatable-colvis-multi">
-						
+						<table class="table datatable-colvis-multi">	
+							
 							<div class="datatable-header">
+
 								<div class="dt-buttons btn-group">
 									<a class="btn btn-default buttons-copy buttons-html5 copyButton" tabindex="0" aria-controls="DataTables_Table_0">
 										<span>Copiar</span></a>
@@ -187,59 +186,58 @@
 						
 							<thead>
 								<tr>
-									<th>ID</th>	
-									<th>Usuário</th>							
-									<th>Nome</th>
-									<th>Data do Cadastro</th>
-									<th>Cidade</th>
-									<th>Status</th>
-									<th>Ação</th>
+									<th>Evento</th>
+									<th>URL</th>
+									<th>Ações</th>
 								</tr>
 							</thead>
 
 							<tbody>
+							  <!-- Linha  -->	
 								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
+									<td>CRESCER LOUNGE SÃO PAULO</td>
+									
+									<td>https://escritorio.crescerlivre.com.br/escritorio/loja/convites/crescerloungesp</td>
+
 									<td class="text-center">
 										<ul class="icons-list">
 											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
+												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Ações <span class="caret"></span></a>
 												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
+			                                        <li><a href="#"><i class="icon icon-eye"></i> Gerenciar</a></li>
+			                                        <li><a href="#"><i class="icon icon-pencil2"></i> Editar</a></li>
+			                                        <li><a href="#"><i class="icon icon-cross2"></i> Excluir</a></li>
+			                                        <li><a href="#"><i class="icon icon-eye"></i> Ver Pedidos</a></li>
 												</ul>
 											</li>
 										</ul>
 									</td>
-								</tr>	
+								</tr>
+							  <!-- Linha  -->
 
 
+							  <!-- Linha  -->	
 								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
+									<td>COMBO CONVITES CRESCER LOUNGE + 1ª CONVENÇÃO NACIONAL CRESCER LIVRE</td>
+									
+									<td>https://escritorio.crescerlivre.com.br/escritorio/loja/convites/combo</td>
+
 									<td class="text-center">
 										<ul class="icons-list">
 											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
+												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Ações <span class="caret"></span></a>
 												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
+			                                        <li><a href="#"><i class="icon icon-eye"></i> Gerenciar</a></li>
+			                                        <li><a href="#"><i class="icon icon-pencil2"></i> Editar</a></li>
+			                                        <li><a href="#"><i class="icon icon-cross2"></i> Excluir</a></li>
+			                                        <li><a href="#"><i class="icon icon-eye"></i> Ver Pedidos</a></li>
 												</ul>
 											</li>
 										</ul>
 									</td>
-								</tr>	
+								</tr>
+							  <!-- Linha  -->
+												
 
 								
 							</tbody>
@@ -315,6 +313,13 @@
 <script src="lib/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
 <script src="lib/js/pages/tables/datatable_extension_export_options.js"></script>
 <script src="lib/js/pages/tables/datatable_extension_columns_selection.js"></script>
+<script src="lib/js/pages/forms/form_inputs_basic.js"></script>
+<!-- /Page scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/forms/datepicker.min.js"></script>
+<script src="lib/js/forms/datepicker.en.js"></script>
+<script src="lib/js/pages/forms/picker_date.js"></script>
 <!-- /Page scripts -->
 
 </body>

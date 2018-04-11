@@ -18537,7 +18537,7 @@ a.fc-more:hover {
 }
 .select2-selection--multiple .select2-selection__rendered {
     width: 100%;
-    height: 36px;
+    height: auto;
     padding-top: 0px;
     padding-right: 2px;
     padding-bottom: 2px;

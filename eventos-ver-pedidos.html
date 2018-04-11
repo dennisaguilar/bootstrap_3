@@ -49,7 +49,7 @@
 					<div class="col-md-6 col-md-offset-3">
 						<div class="search-input-addon">
 							<span class="addon-icon"><i class="icon-search4"></i></span>
-							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+							<input type="text" class="form-control top-search-input" placeholder="O que deseja encontrar?...">
 						</div>
 					</div>
 				</div>
@@ -137,7 +137,8 @@
 			<!--Page Header-->
 			<div class="header">
 				<div class="header-content">
-					<div class="page-title"><i class="icon-display4"></i>Cadastros Pendentes
+					<div class="page-title"><i class="icon-display4"></i> Convites Comprados
+
 					<br>
 					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
 					<i class="icon icon-arrow-left16 x1"></i>Voltar
@@ -156,23 +157,72 @@
 							<div class="panel-body">
 								<div class="row text-center">
 									<div class="col-md-12 col-sm-12 col-xs-12">
-										<h1> <i class="icon icon-user-star x6"></i></h1>
-										<h1 class="text-uppercase no-margin-b">Cadastros Pendentes</h1>						
+										<h1> <i class="icon icon-big-sunglasses x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b">Convites Comprados</h1>						
 									</div>								
 								</div>
 							</div>
 						</div>		
 					<!-- /Recompra / Crescer Mais / Total -->
 
-
-
-
 			<!-- Export options -->
 				<div class="panel panel-flat">
 					<div class="table-responsive">
-						<table class="table datatable-colvis-multi">
+						<table class="table datatable-colvis-multi">	
+							
+
+								<div class="panel-heading">
+									<div class="panel-title">
+										<a class="collapsed btn btn-default" data-toggle="collapse" data-parent="#accordion-control" href="#accordion-control-group2">
+											<i class="icon icon-equalizer4"></i>
+											Expandir Filtros
+										</a>
+									</div>
+								</div>
+								<div id="accordion-control-group2" class="panel-collapse collapse">
+									<div class="panel-body">
+									<form class="form-horizontal" action="#">
+									<div class="pull-left panel panel-body text-center col-md-12">
+
+										<div class="col-md-4 col-sm-4 m-t-10">
+											<label class="control-label col-lg-12">Status do Pedido:</label>
+												<div class="col-lg-12">
+													<select name="select" class="form-control">
+														<option value="opt1">Todos</option>
+														<option value="opt2">Pendentes</option>
+														<option value="opt3">Aprovados</option>
+														<option value="opt4">Cancelados/Excluídos</option>
+														<option value="opt5">Option 5</option>
+														<option value="opt6">Option 6</option>
+													</select>
+												</div>
+										</div>
+
+										<div class="col-md-4 col-sm-4 m-t-10">
+											<label class="control-label col-lg-12">Convite Comprado:</label>
+												<div class="col-lg-12">
+													<select name="select" class="form-control">
+														<option value="opt1">Todos</option>
+														<option value="opt2">Primeiro Lote</option>
+														<option value="opt3">Segundo Lote</option>
+														<option value="opt4">terceiro Lote 4</option>
+														<option value="opt5">Option 5</option>
+														<option value="opt6">Option 6</option>
+													</select>
+												</div>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<button type="button" class="btn btn-danger btn-lg m-t-30">Filtrar</button>
+										</div>
+									</div>
+								</form>
+							  </div>
+							</div>
+													
 						
 							<div class="datatable-header">
+
 								<div class="dt-buttons btn-group">
 									<a class="btn btn-default buttons-copy buttons-html5 copyButton" tabindex="0" aria-controls="DataTables_Table_0">
 										<span>Copiar</span></a>
@@ -187,59 +237,108 @@
 						
 							<thead>
 								<tr>
-									<th>ID</th>	
-									<th>Usuário</th>							
+									<th>Nº Pedido</th>
+									<th>Usuário</th>
 									<th>Nome</th>
-									<th>Data do Cadastro</th>
-									<th>Cidade</th>
+									<th>E-mail</th>
+									<th>Data</th>
 									<th>Status</th>
+									<th>Forma<br>
+									Pagamento</th>
+									<th>Convite</th>									
+									<th>Qtd</th>
+									<th>Preço</th>
+									<th>Subtotal</th>
 									<th>Ação</th>
 								</tr>
 							</thead>
 
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
-									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
-												</ul>
-											</li>
-										</ul>
-									</td>
-								</tr>	
+							  <!-- Linha  -->	
+								<tr>									
+									<td>0024398</td>
+
+									<td>Usuário Santos</td>
+									
+									<td>Usuário DA SILVA SANTOS</td>
+									
+									<td>usuariorichard@gmail.com</td>
+									
+									<td>11/04/2018</td>
+
+									<td>Pedido Realizado</td>
+									
+									<td>Boleto Bancário</td>
+								
+									<td>(3º lote) CONVITE CRESCER LOUNGE SÃO PAULO</td>
+									
+									<td>1</td>	
+
+									<td>R$ 150,00</td>		
+
+									<td>R$ 150,00</td>								
+								
+									<td><a><span class="label label-danger">Ver Pedido</span></a></td>
+								</tr>
+							  <!-- Linha  -->
 
 
-								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
-									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
-												</ul>
-											</li>
-										</ul>
-									</td>
-								</tr>	
+							  <!-- Linha  -->	
+								<tr>									
+									<td>0024398</td>
+
+									<td>Usuário Santos</td>
+									
+									<td>Usuário DA SILVA SANTOS</td>
+									
+									<td>usuariorichard@gmail.com</td>
+									
+									<td>11/04/2018</td>
+
+									<td>Pedido Cancelado pelo Cliente</td>
+									
+									<td>--</td>
+								
+									<td>(3º lote) CONVITE CRESCER LOUNGE SÃO PAULO</td>
+									
+									<td>1</td>	
+
+									<td>R$ 135,00</td>		
+
+									<td>R$ 135,00</td>							
+								
+									<td><a><span class="label label-danger">Ver Pedido</span></a></td>
+								</tr>
+							  <!-- Linha  -->
+
+
+							  <!-- Linha  -->	
+								<tr>									
+									<td>0024398</td>
+
+									<td>Usuário Santos</td>
+									
+									<td>Usuário DA SILVA SANTOS</td>
+									
+									<td>usuariorichard@gmail.com</td>
+									
+									<td>11/04/2018</td>
+
+									<td>Pagamento Aprovado</td>
+									
+									<td>Paypal</td>
+								
+									<td>(3º lote) CONVITE CRESCER LOUNGE SÃO PAULO</td>
+									
+									<td>3</td>	
+
+									<td>R$ 450,00</td>	
+
+									<td>R$ 450,00</td>										
+								
+									<td><a><span class="label label-danger">Ver Pedido</span></a></td>
+								</tr>
+							  <!-- Linha  -->												
 
 								
 							</tbody>
@@ -315,6 +414,13 @@
 <script src="lib/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
 <script src="lib/js/pages/tables/datatable_extension_export_options.js"></script>
 <script src="lib/js/pages/tables/datatable_extension_columns_selection.js"></script>
+<script src="lib/js/pages/forms/form_inputs_basic.js"></script>
+<!-- /Page scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/forms/datepicker.min.js"></script>
+<script src="lib/js/forms/datepicker.en.js"></script>
+<script src="lib/js/pages/forms/picker_date.js"></script>
 <!-- /Page scripts -->
 
 </body>

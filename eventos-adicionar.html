@@ -103,7 +103,7 @@
 
 					<!-- User dropdown -->
 					<li class="dropdown user-dropdown">
-						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuário</small></a>
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
 						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
 						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
 						<div class="dropdown-menu no-padding">
@@ -115,6 +115,7 @@
 			</div>
 		</div>
 		<!-- /Navbar icons -->
+
 	</header>
 	<!-- /Header ends -->
 
@@ -137,7 +138,7 @@
 			<!--Page Header-->
 			<div class="header">
 				<div class="header-content">
-					<div class="page-title"><i class="icon-display4"></i>Cadastros Pendentes
+					<div class="page-title"><i class="icon-display4"></i> Adicionar Evento
 					<br>
 					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
 					<i class="icon icon-arrow-left16 x1"></i>Voltar
@@ -150,105 +151,122 @@
 			<!-- /Page Header-->
 
 			<div class="container-fluid page-content">
+				<div class="row">
 
-					<!-- Recompra / Crescer Mais / Total -->
+					<!-- Página -->
+					<div class="col-md-12">
 						<div class="panel panel-flat">
 							<div class="panel-body">
 								<div class="row text-center">
 									<div class="col-md-12 col-sm-12 col-xs-12">
-										<h1> <i class="icon icon-user-star x6"></i></h1>
-										<h1 class="text-uppercase no-margin-b">Cadastros Pendentes</h1>						
+										<h1> <i class="icon icon-big-sunglasses x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b"> Adicionar Evento</h1>						
+									</div>	
+									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+
+										<div class="row m-t-15">
+
+											<div class="col-md-1 col-sm-0 col-xs-0">												
+											</div>
+
+
+											<div class="col-md-10 col-sm-12 col-xs-12">
+		
+			<!-- Formulário -->
+
+				<form class="form-horizontal form-validate" action="#">
+
+					<div class="clearfix"></div>
+
+					<div class="row">
+					
+						<div class="col-md-12 col-sm-12">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<fieldset>
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Nome do Evento</label>
+											<div class="col-lg-8">
+												<input type="text" name="nome-evento" class="form-control" placeholder="Nome do Evento">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">URL do Evento</label>
+											<div class="col-lg-8">
+												<div class="input-group">
+					                                <span class="input-group-addon">https://escritorio.crescerlivre.com.br/escritorio/loja/convites/</span>
+					                                <input type="text" class="form-control" id="url" value="">
+					                            </div>
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Limite de compra por pessoas</label>
+											<div class="col-lg-8">
+												<input type="text" value="" class="touchspin-empty">
+											</div>
+										</div>
+										<!-- /Basic text input -->
+
+										<!-- Descrição input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Descrição</label>
+				                        	<div class="col-lg-8">
+					                        	<textarea rows="3" cols="5" class="form-control" placeholder="Descrição do Evento"></textarea>
+					                        </div>
+										</div>
+										<!-- /Descrição input -->
+
+										<!-- Banner input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Banner</label>
+											<div class="col-lg-8">
+												<input type="file" class="file-styled-basic">
+											</div>
+										</div>
+										<!-- /Banner input -->
+
+									</fieldset>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="pull-right m-b-20">						
+						<button type="submit" class="btn btn-lg btn-success"><i class="icon-arrow-right14"></i> Salvar</button>
+					</div>
+
+
+				</form>
+
+				<!-- Formulário -->
+
+											</div>
+
+											
+
+											<div class="col-md-2 col-sm-0 col-xs-0">												
+											</div>
+										</div>
+
+
+
 									</div>								
 								</div>
 							</div>
-						</div>		
-					<!-- /Recompra / Crescer Mais / Total -->
-
-
-
-
-			<!-- Export options -->
-				<div class="panel panel-flat">
-					<div class="table-responsive">
-						<table class="table datatable-colvis-multi">
-						
-							<div class="datatable-header">
-								<div class="dt-buttons btn-group">
-									<a class="btn btn-default buttons-copy buttons-html5 copyButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>Copiar</span></a>
-									<a class="btn btn-default buttons-csv buttons-html5 excelButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>Excel</span></a>
-									<a class="btn btn-default buttons-csv buttons-html5 csvButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>CSV</span></a>
-									<a class="btn btn-default buttons-print printButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>Print</span></a>
-								</div>
-							</div>
-						
-							<thead>
-								<tr>
-									<th>ID</th>	
-									<th>Usuário</th>							
-									<th>Nome</th>
-									<th>Data do Cadastro</th>
-									<th>Cidade</th>
-									<th>Status</th>
-									<th>Ação</th>
-								</tr>
-							</thead>
-
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
-									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
-												</ul>
-											</li>
-										</ul>
-									</td>
-								</tr>	
-
-
-								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
-									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
-												</ul>
-											</li>
-										</ul>
-									</td>
-								</tr>	
-
-								
-							</tbody>
-						</table>
+						</div>
 					</div>
+					<!-- /Página -->
 				</div>
-				<!-- /Export options -->
-
-
 
 			</div>
 
@@ -311,10 +329,13 @@
 <!-- /Global scripts -->
 
 <!-- Page scripts -->
-<script src="lib/js/plugins/tables/datatables/datatables.min.js"></script>
-<script src="lib/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
-<script src="lib/js/pages/tables/datatable_extension_export_options.js"></script>
-<script src="lib/js/pages/tables/datatable_extension_columns_selection.js"></script>
+<script src="lib/js/forms/jquery.validate.js"></script>
+<script src="lib/js/pages/forms/form_validations.js"></script>
+<script src="lib/js/forms/formatter.min.js"></script>
+<script src="lib/js/pages/forms/form_controls_extended.js"></script>
+<script src="lib/js/forms/touchspin.min.js"></script>
+<script src="lib/js/pages/forms/form_bootstrap_touchspin.js"></script>
+<script src="lib/js/pages/forms/form_inputs_basic.js"></script>
 <!-- /Page scripts -->
 
 </body>
