@@ -28499,7 +28499,7 @@ div#txt {
     background-image: url(../../img/bg-login.jpg);
     background: url(../../img/bg-login.jpg);
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: center left;
     background-size: cover;
 }
 .auth-container .center-block {
@@ -39749,4 +39749,35 @@ td.nome {
 
 .label-warning {
     background-color: #ff845d !important;
+}
+
+.h-termos-aceitos {
+    max-height: 150px !important;
+    overflow: auto;
+}
+.atualiza-termos-aceitos {
+    max-height: 300px !important;
+    overflow: auto;
+}
+
+.checker {
+    border: 1px solid;
+    border-color: #9a9a9a;
+}
+
+.div-termos-aceite label.checkbox-inline {
+    padding-top: 0;
+}
+.div-termos-aceite .checker {
+    top: 2px !important;
+}
+
+
+.panel h4 {
+    padding: 10px;
+    font-weight: 600;
+}
+table.table.table-pedidos {
+    margin: 10px;
+    width: 90%;
 }

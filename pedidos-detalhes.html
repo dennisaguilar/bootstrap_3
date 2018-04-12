@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Crescer</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="O que deseja encontrar?...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+						<i class="icon icon-transport-cart x3"></i></a>	
+						<span class="badge badge-success pull-right">4</span>
+					</li>
+
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+						<i class="icon-envelop5 x3"></i></a>	
+						<span class="badge badge-danger pull-right">4</span>
+					</li>
+
+					<!-- /Quick apps dropdown -->
+				
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuário</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-display4"></i> Pedidos
+
+					<br>
+					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
+					<i class="icon icon-arrow-left16 x1"></i>Voltar
+					</button>
+					
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+			<div class="container-fluid page-content">
+
+					<!-- Recompra / Crescer Mais / Total -->
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<div class="row text-center">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<h1> <i class="icon icon-cart4 x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b">Pedidos</h1>						
+									</div>								
+								</div>
+							</div>
+						</div>		
+					<!-- /Recompra / Crescer Mais / Total -->
+
+					<!-- Recompra / Crescer Mais / Total -->
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<div class="text-center">
+									<div class="col-md-12 col-sm-12 col-xs-12">	
+
+									<div class="panel-body">
+               						<span class="">
+               						<a class="btn btn-primary btn-sm" href="#"><strong>Imprimir Pedido</strong></a>
+
+                        		    <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#aprovar">Aprovar Pedido</button>
+             						
+             						<a class="btn btn-danger btn-sm cancelar" href="#"><strong>Cancelar Pedido</strong></a>                            
+                                    </span>
+                                    </div>					
+									</div>
+								</div>
+							</div>
+						</div>		
+					<!-- /Recompra / Crescer Mais / Total -->
+
+
+
+
+
+
+				<div class="col-md-6 col-sm-6 col-xs-12">										
+					<div class="panel">
+                    <h4 class="text-center">Dados do Pedido</h4>
+                    <table class="table table-pedidos">
+                      <tbody><tr>
+                        <th class="col-lg-4">Número</th>
+                        <td class="col-lg-8">#00024521</td>
+                      </tr>
+                      <tr>
+                        <th>Data</th>
+                        <td>12/04/2018</td>
+                      </tr>
+                      <tr>
+                        <th>Status</th>
+                        <td>Aguardando Pagamento</td>
+                      </tr>
+                      <tr>
+                        <th>Valor</th>
+                        <td>R$ 150,00</td>
+                      </tr>
+                    </tbody></table>
+                  </div>				
+				</div>	
+
+
+
+
+				
+				<div class="col-md-6 col-sm-6 col-xs-12">		
+					<div class="panel">
+                    <h4 class="text-center">Dados do Cliente</h4>
+                    <table class="table table-pedidos">
+                      <tbody><tr>
+                        <th class="col-lg-4">ID</th>
+                        <td class="col-lg-8">2493 (63358514315)</td>
+                      </tr>
+                      <tr>
+                        <th>Nome</th>
+                        <td>ELIS CARMEM FONSECA DE MORAES</td>
+                      </tr>
+
+                      <tr>
+                        <th>Contato</th>
+                        <td><strong>E-mail:</strong> carmemelis@hotmail.com <strong>
+                        	<br>Cel:</strong> 88996282702 <strong>Tel:</strong>8835323957</td>
+                      </tr>
+                      <tr>
+                        <th>CPF</th>
+                        <td>633.585.143-15</td>
+                      </tr>
+                     </tbody>
+                	</table>
+                  </div>
+                </div>	
+
+
+
+
+
+				<div class="col-md-6 col-sm-6 col-xs-12">										
+					<div class="panel">
+                    <h4 class="text-center">Endereço de Cobrança</h4>
+                    <table class="table table-pedidos">
+                      <tbody><tr>
+                        <th class="col-lg-3">Destinatário</th>
+                        <td class="col-lg-9">ELIS CARMEM FONSECA DE MORAES</td>
+                      </tr>
+                      <tr>
+                        <th>Endereço</th>
+                        <td>RUA JORDAN LEVI MACEDO, 125 A</td>
+                      </tr>
+                       <tr>
+                        <th>Bairro</th>
+                        <td>CIROLANDIA</td>
+                      </tr>
+                      <tr>
+                        <th>Cidade</th>
+                        <td>BARBALHA - CE</td>
+                      </tr>
+                      <tr>
+                        <th>Cep</th>
+                        <td>63180-000</td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+				</div>	
+
+
+
+
+				
+				<div class="col-md-6 col-sm-6 col-xs-12">		
+					<div class="panel">
+                    <h4 class="text-center">Endereço de Entrega</h4>
+                    <table class="table table-pedidos">
+                      <tbody><tr>
+                        <th class="col-lg-3">Destinatário</th>
+                        <td class="col-lg-9">ELIS CARMEM FONSECA DE MORAES</td>
+                      </tr>
+                      <tr>
+                        <th>Endereço</th>
+                        <td>RUA JORDAN LEVI MACEDO, 125 A</td>
+                      </tr>
+                       <tr>
+                        <th>Bairro</th>
+                        <td>CIROLANDIA</td>
+                      </tr>
+                      <tr>
+                        <th>Cidade</th>
+                        <td>BARBALHA - CE</td>
+                      </tr>
+                      <tr>
+                        <th>Cep</th>
+                        <td>63180-000</td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+                </div>	
+
+
+
+
+
+                <div class="col-md-6 col-sm-6 col-xs-12">		
+					<div class="panel">
+                    <h4 class="text-center">Informações de Pagamento</h4>
+                 	  <table class="table table-pedidos">
+                        <tbody><tr>
+                              <th>Informações de Pagamento</th>
+                              <td>--- Informações de Pagamento ---</td>
+                          </tr>
+                        </tbody>
+                  	  </table>
+                    </div>
+                </div>	
+
+
+
+
+
+                <div class="col-md-6 col-sm-6 col-xs-12">		
+					<div class="panel">
+                    <h4 class="text-center">Informações de Entrega</h4>
+                 	  <table class="table table-pedidos">
+                        <tbody><tr>
+                              <th>Forma de Envio</th>
+                              <td>--- Forma de Envio ---</td>
+                          </tr>
+                        </tbody>
+                  	  </table>
+                    </div>
+                </div>	
+
+
+
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">	
+             	   <div class="panel">	
+					<div class="panel-heading">
+						<h4 class="text-center">Itens do Pedido</h4>
+					</div>
+
+						<div class="table-responsive">
+								<table class="table">
+			                      <tbody>
+			                      <tr>
+			                        <th>#</th>
+			                        <th colspan="2">Nome</th>
+			                        <th>Endereço Logístico</th>
+			                        <th>Qtd</th>
+			                        <th>Pontos Binário</th>
+			                        <th>Pontos Graduação</th>
+			                        <th>Pontos Unilevel</th>
+			                        <th>Valor&nbsp;Unitário</th>
+			                        <th>Valor&nbsp;Total</th>
+			                      </tr>
+
+                                  <tr>
+			                        <td>02890</td>
+			                        <td colspan="2">(3º LOTE) CONVITE CRESCER LOUNGE SÃO PAULO</td>
+			                        <td>00</td>
+			                        <td>1</td>
+			                        <td>0</td>
+			                        <td>210</td>
+			                        <td>210</td>
+			                        <td>R$&nbsp;150,00</td>
+			                        <td>R$&nbsp;150,00</td>
+			                      </tr>
+                                  
+                                  <tr>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                                  <td>Total</td>
+                                  <td>0</td>
+                                  <td>210</td>
+                                  <td>210</td>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                              </tr>
+                   			 </tbody>
+                   			</table>
+						</div>
+					</div>
+                </div>	
+
+
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">	
+             	   <div class="panel">						
+						<div class="table-responsive">
+								<table class="table">
+			                      <tbody><tr>
+			                        <th>Peso Total</th>
+			                        <th>Valor dos Produtos</th>
+			                        <th>Valor da Entrega</th>
+			                        <th>Valor do Desconto</th>
+			                        <th>Valor Total</th>
+			                      </tr>
+			                      <tr>
+			                        <td>0,05 KG</td>
+			                        <td>R$&nbsp;150,00</td>
+			                        <td>R$&nbsp;0,00</td>
+			                        <td>R$&nbsp;0,00</td>
+			                        <td>R$&nbsp;150,00</td>
+			                      </tr>
+			                     </tbody>
+			                	</table>
+						</div>
+					</div>
+                </div>	
+
+
+
+
+				<div class="col-md-12 col-sm-12 col-xs-12">	
+             	   <div class="panel">
+                 	   <h4 class="text-center">Status do Pedido</h4>
+	                    <table class="table">
+	                      <tbody>
+	                      	 <tr>
+	                         <th class="col-lg-2">Data</th>
+	                         <th>Descrição</th>
+	                 	     </tr>
+                            
+                              <tr>
+	                          <td>12/04/2018 10:20:43</td>
+	                          <td>Pedido Realizado</td>
+                      		  </tr>
+                            
+                              <tr>
+	                          <td>12/04/2018 10:20:43</td>
+	                          <td>Aguardando Pagamento</td>
+	                       	  </tr>
+                      	   </tbody>
+                      	</table>
+                   </div>
+                </div>
+
+
+
+				
+				<div class="col-md-12 col-sm-12 col-xs-12">	
+             	 <div class="panel">   
+                    <h4 class="text-center">Comentários</h4>
+                   
+                    <button type="button" class="pull-right btn btn-success btn-xs m-10" data-toggle="modal" data-target="#modal_default">
+                			Incluir Comentário
+                	</button>
+                    
+                    <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                      	<tr>
+                        <th class="col-lg-2">Data</th>
+                        <th>Comentário</th>
+                        </tr>
+                        
+                        <tr>
+                        <td>15/04/2018</td>
+                        <td>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada...</td>
+                        </tr>
+
+                        <tr>
+                        <td>15/04/2018</td>
+                        <td>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada...</td>
+                        </tr>
+
+                        <tr>
+                        <td>15/04/2018</td>
+                        <td>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada...</td>
+                        </tr>
+                       </tbody>
+                    </table>
+                    </div>  
+                  </div>
+                </div>
+
+
+
+
+
+			</div>
+
+
+			<br>
+			<br>
+
+
+		</section>
+		<!-- /Page Container ends -->
+
+
+
+				<!-- Basic modal -->
+				<div id="modal_default" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">Incluir Comentário</div>
+							</div>
+							<div class="modal-body">								
+								<textarea rows="3" cols="5" class="form-control" placeholder="Digite seu comentário aqui"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-success">Enviar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Basic modal -->
+
+
+
+		<!-- ScrolltoTop -->
+		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+
+		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+
+		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/plugins/tables/datatables/datatables.min.js"></script>
+<script src="lib/js/pages/forms/form_inputs_basic.js"></script>
+<!-- /Page scripts -->
+
+
+</body>
+</html>
