@@ -140,10 +140,7 @@
 				<div class="header-content">
 					<div class="page-title"><i class="icon-display4"></i> Cadastro de Associado
 					<br>
-					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
-					<i class="icon icon-arrow-left16 x1"></i>Voltar
-					</button>
-					
+								
 
 					</div>
 				</div>
@@ -155,12 +152,12 @@
 
 					<!-- Página -->
 					<div class="col-md-12">
-						<div class="panel panel-flat">
-							<div class="panel-body">
-								<div class="row text-center">
+						<div class="panel panel-flat m-t-50 m-b-50">
+							<div class="panel-body m-t-50 m-b-50">
+								<div class="row text-center m-t-50 m-b-50">
 									<div class="col-md-12 col-sm-12 col-xs-12">
-										<h1> <i class="icon icon-user-plus x6"></i></h1>
-										<h1 class="text-uppercase no-margin-b">Cadastro de Associado</h1>						
+										<h1> <i class="icon icon-happy text-success x6"></i></h1>
+										<h2 class="text-uppercase no-margin-b">Cadastro de Associado</h2>						
 									</div>	
 									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
 
@@ -172,172 +169,22 @@
 
 
 											<div class="col-md-10 col-sm-10 col-xs-12">
-			<!-- Formulário -->
+											<div class="alert alert-success alert-bordered">
 
-				<form class="form-horizontal form-validate" action="#">
-
-					<div class="pull-right m-b-20">
-						<button type="reset" class="btn btn-lg btn-default" id="reset"><i class="icon-reload-alt position-left"></i>Limpar</button>&nbsp;
-						<button type="submit" class="btn btn-lg btn-success"><i class="icon-arrow-right14"></i> Cadastrar</button>
-					</div>
-					<div class="clearfix"></div>
-
-					<div class="row">
-					
-						<div class="col-md-6 col-sm-6">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<div class="panel-title">Dados Pessoais</div>
-								</div>
-								<div class="panel-body">
-									<fieldset>
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Nome <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="nome" class="form-control" required="required" placeholder="Nome Completo">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Email field -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Email<span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="email" name="email" class="form-control" id="emailid" required="required" placeholder="Digite um endereço de e-mail válido">
-											</div>
-										</div>
-										<!-- /email field -->
-
-										<!-- Repeat email -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Repita o email <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="email" name="confirm_email" class="form-control" required="required" placeholder="Digite um endereço de e-mail válido">
-											</div>
-										</div>
-										<!-- /repeat email -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Telefone <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="telefone2" class="form-control" required="required" placeholder="(00) 00000-0000o">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Telefone 2<span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="telefone2" class="form-control" required="required" placeholder="(00) 00000-0000">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">ID de Usuário<span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="idusuario" class="form-control" required="required" placeholder="ID de Usuário">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Password field -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Senha<span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="password" name="password" id="password" class="form-control" required="required" placeholder="Mínimo de 8 caracteres">
-											</div>
-										</div>
-										<!-- /password field -->
-
-										<!-- Repeat password -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Repita a Senha<span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="password" name="repeat_password" class="form-control" required="required" placeholder="Mínimo de 8 caracteres">
-											</div>
-										</div>
-										<!-- /repeat password -->
-
-									</fieldset>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-6 col-sm-6">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<div class="panel-title">Endereço Residencial</div>
-								</div>
-								<div class="panel-body">
-									<fieldset>
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Cidade <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="cidade" class="form-control" required="required" placeholder="Cidade">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Estado <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="estado" class="form-control" required="required" placeholder="Estado">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Rua <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="rua" class="form-control" required="required" placeholder="Rua">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Complemento <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="complemento" class="form-control" required="required" placeholder="Complemento">
-											</div>
-										</div>
-										<!-- /basic text input -->
-
-										<!-- Basic text input -->
-										<div class="form-group">
-											<label class="control-label col-lg-4">Bairro <span class="text-danger">*</span></label>
-											<div class="col-lg-8">
-												<input type="text" name="bairro" class="form-control" required="required" placeholder="Bairro">
-											</div>
-										</div>
-										<!-- /basic text input -->
-									</fieldset>
-								</div>
-							</div>
-						</div>
-					</div>
-				</form>
-
-				<!-- Formulário -->
-
-											</div>
-
+                                 		  	<h3><span class="text-semibold">Deu Certo!</span> O Cadastro de Associado foi realizado com Sucesso!</h3>
+                               				
+                               				</div>
 											
+											<a href="index.html" type=" button" class="btn btn-default btn-success alert-success m-t-10">
+											<i class="icon icon-home9 x1"></i> Ir para Página Inicial
+											</a>
+
+                            				</div>
+
 
 											<div class="col-md-1 col-sm-1 col-xs-0">												
 											</div>
 										</div>
-
 
 
 									</div>								
@@ -407,11 +254,6 @@
 <script src="lib/js/core/app/layouts.js"></script>
 <script src="lib/js/core/app/core.js"></script>
 <!-- /Global scripts -->
-
-<!-- Page scripts -->
-<script src="lib/js/forms/jquery.validate.js"></script>
-<script src="lib/js/pages/forms/form_validations.js"></script>
-<!-- /Page scripts -->
 
 </body>
 </html>

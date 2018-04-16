@@ -6739,7 +6739,7 @@ body .menu .acc-parent.active .acc-icon:after {
     position: fixed;
     top: 60px;
     border-right: 1px solid "transparent";
-    background-color: #1C2B36;
+    background-color: #fff;
     z-index: 1024;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);

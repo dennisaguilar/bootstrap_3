@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Crescer</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+						<i class="icon icon-transport-cart x3"></i></a>	
+						<span class="badge badge-success pull-right">4</span>
+					</li>
+
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+						<i class="icon-envelop5 x3"></i></a>	
+						<span class="badge badge-danger pull-right">4</span>
+					</li>
+
+					<!-- /Quick apps dropdown -->
+				
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-display4"></i> Cadastro de Associado
+					<br>
+					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
+					<i class="icon icon-arrow-left16 x1"></i>Voltar
+					</button>
+					
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+			<div class="container-fluid page-content">
+				<div class="row">
+
+					<!-- Página -->
+					<div class="col-md-12">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<div class="row text-center">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<h1> <i class="icon icon-user-plus x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b">Cadastro de Associado</h1>						
+									</div>	
+									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+
+										<div class="row m-t-15">
+
+											<div class="col-md-1 col-sm-1 col-xs-0">												
+											</div>
+
+
+											<div class="col-md-10 col-sm-10 col-xs-12">
+			<!-- Formulário -->
+
+				<form class="form-horizontal form-validate" action="#">
+
+					<div class="pull-right m-b-20">
+						<button type="reset" class="btn btn-lg btn-default" id="reset"><i class="icon-reload-alt position-left"></i>Limpar</button>&nbsp;
+						<button type="submit" class="btn btn-lg btn-success"><i class="icon-arrow-right14"></i> Cadastrar</button>
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="row">
+					
+						<div class="col-md-6 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="panel-title">Dados Pessoais</div>
+								</div>
+								<div class="panel-body">
+									<fieldset>
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Nome <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="nome" class="form-control" required="required" placeholder="Nome Completo">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Email field -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Email<span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="email" name="email" class="form-control" id="emailid" required="required" placeholder="Digite um endereço de e-mail válido">
+											</div>
+										</div>
+										<!-- /email field -->
+
+										<!-- Repeat email -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Repita o email <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="email" name="confirm_email" class="form-control" required="required" placeholder="Digite um endereço de e-mail válido">
+											</div>
+										</div>
+										<!-- /repeat email -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Telefone <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="telefone2" class="form-control" required="required" placeholder="(00) 00000-0000o">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Telefone 2<span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="telefone2" class="form-control" required="required" placeholder="(00) 00000-0000">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Password field -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Senha<span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="password" name="password" id="password" class="form-control" required="required" placeholder="Mínimo de 8 caracteres">
+											</div>
+										</div>
+										<!-- /password field -->
+
+										<!-- Repeat password -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Repita a Senha<span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="password" name="repeat_password" class="form-control" required="required" placeholder="Mínimo de 8 caracteres">
+											</div>
+										</div>
+										<!-- /repeat password -->
+
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="panel-title">Endereço Residencial</div>
+								</div>
+								<div class="panel-body">
+									<fieldset>
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Cidade <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="cidade" class="form-control" required="required" placeholder="Cidade">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Estado <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="estado" class="form-control" required="required" placeholder="Estado">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Rua <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="rua" class="form-control" required="required" placeholder="Rua">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Complemento <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="complemento" class="form-control" required="required" placeholder="Complemento">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Bairro <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="bairro" class="form-control" required="required" placeholder="Bairro">
+											</div>
+										</div>
+										<!-- /basic text input -->
+									</fieldset>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<!-- Formulário -->
+
+											</div>
+
+											
+
+											<div class="col-md-1 col-sm-1 col-xs-0">												
+											</div>
+										</div>
+
+
+
+									</div>								
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Página -->
+				</div>
+
+			</div>
+
+
+			<br>
+			<br>
+
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+
+		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+
+		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/forms/jquery.validate.js"></script>
+<script src="lib/js/pages/forms/form_validations.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>
