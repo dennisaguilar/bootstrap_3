@@ -6421,12 +6421,11 @@ body.left-aside-toggle .main-container {
     transition: all 350ms cubic-bezier(0.19,  1,  0.22,  1);
 }
 body .menu {
-    width: 250px;
     height: 100%;
     position: fixed;
     top: 0;
     border-right: 1px solid "transparent";
-    background-color: #1C2B36;
+    background-color: #ffffff;
     color: #9E9E9E;
     z-index: 9999;
     -webkit-transition: all 350ms cubic-bezier(0.19,  1,  0.22,  1);
@@ -6540,7 +6539,7 @@ body .menu .user-profile-container .user-profile .admin-user-info ul li small {
     font-family: "OpenSans", sans-serif;
 }
 body .menu .sidebar-accordion {
-    background: #1C2B36;
+    background: #ffffff;
     padding-top: 10px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -6578,7 +6577,7 @@ body .menu .sidebar-accordion li ul {
     padding-left: 0px;
     display: none;
     position: relative;
-    background: #131e25;
+    background: #8a0015;
 }
 body .menu .sidebar-accordion li ul li {
     position: relative;
@@ -6588,7 +6587,7 @@ body .menu .sidebar-accordion li ul li a {
     padding-right: 10px;
     padding-bottom: 5px;
     padding-left: 40px;
-    color: #869FB1;
+    color: #ffffff;
     position: relative;
 }
 body .menu .sidebar-accordion li ul li a:before {
@@ -6602,7 +6601,7 @@ body .menu .sidebar-accordion li ul li a:before {
     bottom: auto;
     left: 20px;
     border: 1px dotted rgba(134, 159, 177, 0.5);
-    background: #131e25;
+    background: #ffffff;
     content: "";
     z-index: 1;
 }
@@ -6642,20 +6641,20 @@ body .menu .sidebar-accordion>li.active>a {
     color: #fff;
 }
 body .menu .sidebar-accordion>li.active>a i {
-    color: #fff;
+    color:#333333;
 }
 body .menu .sidebar-accordion>li>a {
     padding-top: 9px;
     padding-right: 20px;
     padding-bottom: 8px;
     padding-left: 15px;
-    color: #869FB1;
+    color: #333333;
     display: block;
     vertical-align: middle;
     position: relative;
 }
 body .menu .sidebar-accordion>li>a.active, body .menu .sidebar-accordion>li>a:hover, body .menu .sidebar-accordion>li>a:focus {
-    background-color: #131e25;
+    background-color: #bc0824;
     color: #fff;
 }
 body .menu .sidebar-accordion>li>a.active i, body .menu .sidebar-accordion>li>a:hover i, body .menu .sidebar-accordion>li>a:focus i {
@@ -6666,10 +6665,10 @@ body .menu .sidebar-accordion>li>a>i {
     position: relative;
     top: -2px;
     text-align: left;
-    color: #869FB1;
+    color: #333;
 }
 body .menu .sidebar-accordion>li>a.acc-parent.active {
-    background-color: #131e25;
+    background-color: #bc0824;
     color: #fff;
 }
 body .menu .sidebar-accordion>li>a.acc-parent.active i {

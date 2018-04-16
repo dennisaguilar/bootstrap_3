@@ -176,12 +176,6 @@
 
 				<form class="form-horizontal form-validate" action="#">
 
-					<div class="pull-right m-b-20">
-						<button type="reset" class="btn btn-lg btn-default" id="reset"><i class="icon-reload-alt position-left"></i>Limpar</button>&nbsp;
-						<button type="submit" class="btn btn-lg btn-success"><i class="icon-arrow-right14"></i> Cadastrar</button>
-					</div>
-					<div class="clearfix"></div>
-
 					<div class="row">
 					
 						<div class="col-md-6 col-sm-6">
@@ -194,9 +188,99 @@
 
 										<!-- Basic text input -->
 										<div class="form-group">
-											<label class="control-label col-lg-4">Nome <span class="text-danger">*</span></label>
+											<label class="control-label col-lg-4">Lado Binário <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<select name="lado-binario" required="required" class="form-control">
+												<option value=""></option>
+												<option value="opt2">Esquerdo</option>
+												<option value="opt3">Direito</option>										
+												</select>
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Nome Completo <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
 												<input type="text" name="nome" class="form-control" required="required" placeholder="Nome Completo">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Data De Nascimento <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" class="form-control" name="format-date" class="form-control" required="required" placeholder="00/00/000">
+											</div>
+				                        	
+				                        	<!-- <input type="text" class="form-control" name="format-date" placeholder="Enter starting date"> -->
+
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Sexo <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<select name="select-sexo" required="required" class="form-control">
+												<option value=""></option>
+												<option value="opt2">Masculino</option>
+												<option value="opt3">Feminino</option>										
+												</select>
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Pessoa <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<select name="select-pessoa" required="required" id="select-pessoa" class="form-control">
+												<option value=""></option>
+												<option value="selecionou-fisica">Física</option>
+												<option value="selecionou-juridica">Jurídica</option>										
+												</select>
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group campo-juridico">
+											<label class="control-label col-lg-4">CNPJ <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="cnpj" class="form-control" required="required">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group campo-juridico">
+											<label class="control-label col-lg-4">Inscrição Estadual <span class="text-danger"></span></label>
+											<div class="col-lg-8">
+												<input type="text" name="inscricao-estadual" class="form-control">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group campo-fisico">
+											<label class="control-label col-lg-4">CPF <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="cpf" class="form-control" required="required" placeholder="CPF">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group campo-fisico">
+											<label class="control-label col-lg-4">RG <span class="text-danger">*</span></label>
+											<div class="col-lg-4">
+												<input type="text" name="rg" class="form-control" required="required" placeholder="RG">
+											</div>
+											<div class="col-lg-4">
+												<input type="text" name="rg" class="form-control" required="required" placeholder="Emissor">
 											</div>
 										</div>
 										<!-- /basic text input -->
@@ -223,16 +307,16 @@
 										<div class="form-group">
 											<label class="control-label col-lg-4">Telefone <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" name="telefone2" class="form-control" required="required" placeholder="(00) 00000-0000o">
+												<input type="text" name="telefone" class="form-control" required="required" placeholder="(00) 0000-0000o">
 											</div>
 										</div>
 										<!-- /basic text input -->
 
 										<!-- Basic text input -->
 										<div class="form-group">
-											<label class="control-label col-lg-4">Telefone 2<span class="text-danger">*</span></label>
+											<label class="control-label col-lg-4">Celular<span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" name="telefone2" class="form-control" required="required" placeholder="(00) 00000-0000">
+												<input type="text" name="celular" class="form-control" required="required" placeholder="(00) 0 00000-0000">
 											</div>
 										</div>
 										<!-- /basic text input -->
@@ -270,27 +354,55 @@
 
 										<!-- Basic text input -->
 										<div class="form-group">
-											<label class="control-label col-lg-4">Cidade <span class="text-danger">*</span></label>
+											<label class="control-label col-lg-4">CEP <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" name="cidade" class="form-control" required="required" placeholder="Cidade">
+												 <input id="cep" class="form-control" type="text" name="cep" value="" data-validate="require" required="">
+                							    <span id="btnBuscarCep" class="input-group-addon" style="cursor:pointer;">Buscar</span>
 											</div>
 										</div>
 										<!-- /basic text input -->
+
 
 										<!-- Basic text input -->
 										<div class="form-group">
 											<label class="control-label col-lg-4">Estado <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" name="estado" class="form-control" required="required" placeholder="Estado">
+												<select name="estado" required="required" id="select-pessoa" class="form-control">
+												<option value=""></option>
+												<option value="1">Estado 1</option>
+												<option value="2">Estado 2</option>										
+												</select>
 											</div>
 										</div>
 										<!-- /basic text input -->
 
 										<!-- Basic text input -->
 										<div class="form-group">
-											<label class="control-label col-lg-4">Rua <span class="text-danger">*</span></label>
+											<label class="control-label col-lg-4">Cidade <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" name="rua" class="form-control" required="required" placeholder="Rua">
+												<select name="cidade" required="required" id="select-pessoa" class="form-control">
+												<option value=""></option>
+												<option value="1">Cidade 1</option>
+												<option value="2">Cidade 2</option>										
+												</select>
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Endereço <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="rua" class="form-control" required="required" placeholder="Endereço">
+											</div>
+										</div>
+										<!-- /basic text input -->
+
+										<!-- Basic text input -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Número <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="numero" class="form-control" required="required" placeholder="Número">
 											</div>
 										</div>
 										<!-- /basic text input -->
@@ -312,6 +424,12 @@
 											</div>
 										</div>
 										<!-- /basic text input -->
+
+										<div class="pull-right m-b-20">
+										<button type="reset" class="btn btn-lg btn-default" id="reset"><i class="icon-reload-alt position-left"></i>Limpar</button>&nbsp;
+										<button type="submit" class="btn btn-lg btn-success"><i class="icon-arrow-right14"></i> Cadastrar</button>
+										</div>
+									
 									</fieldset>
 								</div>
 							</div>
@@ -360,6 +478,30 @@
 	</div>
 
 
+<!-- Page scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	
+	$( document ).ready(function() {
+
+		  $(".campo-juridico, .campo-fisico").hide(); 
+   			 $('#select-pessoa').change(function(){
+      		  if($('#select-pessoa').val() == 'selecionou-fisica') {
+        	   	 $('.campo-juridico').hide();
+				 $('.campo-fisico').show();
+      		  } else {
+                 $('.campo-fisico').hide();
+				 $('.campo-juridico').show();
+      	  } 
+		  });
+
+
+	});
+	
+</script>
+<!-- /Page scripts -->
+
+
 <!-- Layout settings -->
 <div class="layout"></div>
 <span class="is_hidden" id="jquery_vars">
@@ -402,6 +544,8 @@
 <!-- Page scripts -->
 <script src="lib/js/forms/jquery.validate.js"></script>
 <script src="lib/js/pages/forms/form_validations.js"></script>
+<script src="lib/js/forms/formatter.min.js"></script>
+<script src="lib/js/pages/forms/form_controls_extended.js"></script>
 <!-- /Page scripts -->
 
 </body>
