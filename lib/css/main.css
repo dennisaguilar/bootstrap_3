@@ -39780,3 +39780,7 @@ table.table.table-pedidos {
     margin: 10px;
     width: 90%;
 }
+
+.panel-collapse .panel-body {
+    padding: 20px;
+}
