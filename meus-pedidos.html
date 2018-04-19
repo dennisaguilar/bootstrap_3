@@ -49,7 +49,7 @@
 					<div class="col-md-6 col-md-offset-3">
 						<div class="search-input-addon">
 							<span class="addon-icon"><i class="icon-search4"></i></span>
-							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+							<input type="text" class="form-control top-search-input" placeholder="O que deseja encontrar?...">
 						</div>
 					</div>
 				</div>
@@ -137,7 +137,8 @@
 			<!--Page Header-->
 			<div class="header">
 				<div class="header-content">
-					<div class="page-title"><i class="icon-display4"></i>Cadastros Pendentes
+					<div class="page-title"><i class="icon-display4"></i>Meus Pedidos
+
 					<br>
 					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
 					<i class="icon icon-arrow-left16 x1"></i>Voltar
@@ -151,28 +152,29 @@
 
 			<div class="container-fluid page-content">
 
-					<!-- Recompra / Crescer Mais / Total -->
+					<!-- Meus -->
 						<div class="panel panel-flat">
 							<div class="panel-body">
 								<div class="row text-center">
 									<div class="col-md-12 col-sm-12 col-xs-12">
-										<h1> <i class="icon icon-user-star x6"></i></h1>
-										<h1 class="text-uppercase no-margin-b">Cadastros Pendentes</h1>						
+										<h1> <i class="icon icon-cart4 x6"></i></h1>
+										<h1 class="text-uppercase no-margin-b">Meus Pedidos</h1>						
 									</div>								
 								</div>
 							</div>
 						</div>		
-					<!-- /Recompra / Crescer Mais / Total -->
+					<!-- /Meus Pedidos -->
+
+				
 
 
-
-
-			<!-- Export options -->
+			<!-- Table List Products -->
 				<div class="panel panel-flat">
 					<div class="table-responsive">
-						<table class="table datatable-colvis-multi">
-						
+						<table class="table datatable-colvis-multi">	
+							
 							<div class="datatable-header">
+
 								<div class="dt-buttons btn-group">
 									<a class="btn btn-default buttons-copy buttons-html5 copyButton" tabindex="0" aria-controls="DataTables_Table_0">
 										<span>Copiar</span></a>
@@ -187,66 +189,101 @@
 						
 							<thead>
 								<tr>
-									<th>ID</th>	
-									<th>Usuário</th>							
-									<th>Nome</th>
-									<th>Data do Cadastro</th>
-									<th>Cidade</th>
+									<th class="col-md-1 col-sm-1">Produto</th>
+									<th>Número do Pedido</th>
+									<th>Código do Produto</th>
+									<th>Nome do Produto</th>
+									<th>Data</th>									
+									<th>Valor</th>
 									<th>Status</th>
 									<th>Ação</th>
 								</tr>
 							</thead>
 
 							<tbody>
+						
+							  <!-- Linha  -->	
 								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
-									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
-												</ul>
-											</li>
-										</ul>
-									</td>
-								</tr>	
+									<td><img src="http://via.placeholder.com/200x200" class="img-responsive" alt="product" style="width:70px"/></td>
+									<td>                                        
+                                        <b>12825 </b>
+                                    </td>
 
+                                    <td>#568923</td>
 
+                                    <td>Nome do Produto</td>
+									
+									<td>08/01/2018</td>
+									
+									<td>R$ 99,90</td>
+																		
+									<td>
+										<span class="label label-success" title="Aprovado">Pedido Finalizado</span>
+										<br>
+										<small>09/01/2018 10:22:57</small>
+									</td>									
+								
+									<td><a><span class="label label-success">Ver Detalhes</span></a></td>
+								</tr>
+							  <!-- Linha  -->
+
+							   <!-- Linha  -->	
 								<tr>
-									<td>1</td>
-									<td>JohnDoe Durant</td>
-									<td>JohnDoe Durant Santos</td>
-									<td>26/07/2016</td>
-									<td>Belo Horizonte/MG </td>
-									<td><span class="label label-danger">Pendente</span></td>
-									<td class="text-center">
-										<ul class="icons-list">
-											<li class="dropdown">
-												<a href="#" class="dropdown-toggle btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Geral <span class="caret"></span></a>
-												<ul class="dropdown-menu dropdown-menu-right">													
-			                                        <li><a href="#">Acessar</a></li>
-			                                        <li><a href="#">Editar</a></li>
-			                                        <li><a href="#">Excluir</a></li>
-												</ul>
-											</li>
-										</ul>
-									</td>
-								</tr>	
+									<td><img src="http://via.placeholder.com/200x200" class="img-responsive" alt="product" style="width:70px"/></td>
+									<td>                                        
+                                        <b>12955 </b>
+                                    </td>
+
+									<td>#6268923</td>
+
+									<td>Nome do Produto</td>
+
+									<td>10/02/2018</td>
+									
+									<td>R$ 105,90</td>
+																		
+									<td>
+										<span class="label label-warning" title="Aprovado">Pedido em Análise</span>
+										<br>
+										<small>--</small>
+									</td>									
+								
+									<td><a><span class="label label-success">Ver Detalhes</span></a></td>
+								</tr>
+							  <!-- Linha  -->
+
+							   <!-- Linha  -->	
+								<tr>
+									<td><img src="http://via.placeholder.com/200x200" class="img-responsive" alt="product" style="width:70px"/></td>
+									<td>                                        
+                                        <b>19955 </b>
+                                    </td>
+                                    
+                                    <td>#6568923</td>
+
+                                    <td>Nome do Produto</td>	
+
+									<td>25/03/2018</td>
+									
+									<td>R$ 35,90</td>
+																		
+									<td>
+										<span class="label label-danger" title="Aprovado">Pedido Cancelado</span>
+										<br>
+										<small>27/03/2018 12:22:50</small>
+									</td>									
+								
+									<td><a><span class="label label-success">Ver Detalhes</span></a></td>
+								</tr>
+							  <!-- Linha  -->							  
+												
 
 								
 							</tbody>
 						</table>
 					</div>
 				</div>
-				<!-- /Export options -->
+				<!-- /Table List Products -->
 
 
 
@@ -315,6 +352,7 @@
 <script src="lib/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
 <script src="lib/js/pages/tables/datatable_extension_export_options.js"></script>
 <script src="lib/js/pages/tables/datatable_extension_columns_selection.js"></script>
+<script src="lib/js/pages/forms/form_inputs_basic.js"></script>
 <!-- /Page scripts -->
 
 </body>

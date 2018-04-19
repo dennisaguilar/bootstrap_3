@@ -38001,8 +38001,8 @@ div#txt {
     color: #b0a4f5 !important;
 }
 .bg-amber {
-    background-color: #FFC107 !important;
-    border-color: #FFC107 !important;
+    background-color: #59b45d !important;
+    border-color: #25b52b !important;
     color: #fff !important;
 }
 .bg-amber-50 {
@@ -39783,4 +39783,53 @@ table.table.table-pedidos {
 
 .panel-collapse .panel-body {
     padding: 20px;
+}
+
+.panel-body.container-image-produto {
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #b5b5b5bf;
+  box-shadow: inset 0 0 0 15px #efefef8a;
+}
+
+.container-image-produto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.btn-black {
+    background-color: #4a4a4a !important;
+    background-image: none;
+    color: #fff;
+}
+
+.btn-black:hover {
+    background-color: #3a3a3a !important;
+    background-image: none;
+    color: #fff;
 }

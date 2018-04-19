@@ -49,7 +49,7 @@
 					<div class="col-md-6 col-md-offset-3">
 						<div class="search-input-addon">
 							<span class="addon-icon"><i class="icon-search4"></i></span>
-							<input type="text" class="form-control top-search-input" placeholder="O que deseja encontrar?...">
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
 						</div>
 					</div>
 				</div>
@@ -103,7 +103,7 @@
 
 					<!-- User dropdown -->
 					<li class="dropdown user-dropdown">
-						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuário</small></a>
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
 						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
 						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
 						<div class="dropdown-menu no-padding">
@@ -115,6 +115,7 @@
 			</div>
 		</div>
 		<!-- /Navbar icons -->
+
 	</header>
 	<!-- /Header ends -->
 
@@ -137,8 +138,7 @@
 			<!--Page Header-->
 			<div class="header">
 				<div class="header-content">
-					<div class="page-title"><i class="icon-display4"></i> Cadastros Ativos
-
+					<div class="page-title"><i class="icon-display4"></i> Meu Carrinho
 					<br>
 					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
 					<i class="icon icon-arrow-left16 x1"></i>Voltar
@@ -150,146 +150,122 @@
 			</div>
 			<!-- /Page Header-->
 
+
+
+
+
+
+
 			<div class="container-fluid page-content">
 
-					<!-- Recompra / Crescer Mais / Total -->
-						<div class="panel panel-flat">
+				<div class="row">
+
+					<div class="col-md-8 col-sm-8">
+
+						<!-- Your cart -->
+						<div class="panel panel-flat table-responsive">
+							<div class="panel-heading">
+								<h5 class="panel-title">Meu Carrinho</h5>
+							</div>
+							<table class="table table-lg">
+								<thead>
+									<tr>
+										<th class="col-md-1 col-sm-1">Imagem</th>
+										<th>Informação do produto</th>
+										<th class="col-md-1 col-sm-1">Preço</th>
+										<th class="col-md-1 col-sm-1">Quantidade</th>
+										<th class="col-md-1 col-sm-1">Total</th>
+										<th class="col-md-1 col-sm-1">Ações</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="http://via.placeholder.com/200x200" class="img-responsive" alt="product" style="width:70px"/></td>
+										<td>
+											<h4>Produto 1</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+										</td>
+										<td>$49</td>
+										<td><input type="text" class="form-control input-sm" value="2"/></td>
+										<td><h3 class="text-semibold">$98</h3></td>
+										<td class="text-center"><a href="#"><i class="icon-trash"></i></a></td>
+									</tr>
+									<tr>
+										<td><img src="http://via.placeholder.com/200x200" class="img-responsive" alt="product" style="width:70px"/></td>
+										<td>
+											<h4>Produto 2</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+										</td>
+										<td>$99</td>
+										<td><input type="text" class="form-control input-sm" value="1"/></td>
+										<td><h3 class="text-semibold">$99</h3></td>
+										<td class="text-center"><a href="#"><i class="icon-trash"></i></a></td>
+									</tr>
+									<tr>
+										<td><img src="http://via.placeholder.com/200x200" class="img-responsive" alt="product" style="width:70px"/></td>
+										<td>
+											<h4>Produto 3</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+										</td>
+										<td>$159</td>
+										<td><input type="text" class="form-control input-sm" value="1"/></td>
+										<td><h3 class="text-semibold">$159</h3></td>
+										<td class="text-center"><a href="#"><i class="icon-trash"></i></a></td>
+									</tr>
+								</tbody>
+							</table>
 							<div class="panel-body">
-								<div class="row text-center">
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<h1> <i class="icon icon-user-check x6"></i></h1>
-										<h1 class="text-uppercase no-margin-b">Cadastros Ativos</h1>						
-									</div>								
-								</div>
+								<a href="ecom_checkout.html" class="btn btn-success pull-right"><i class="icon-cart4 position-left"></i>Finalizar</a>
+								<button class="btn btn-default pull-left"><i class="icon-arrow-left8 position-left"></i>Continuar Comprando</button>
+								<div class="clearfix"></div>
 							</div>
-						</div>		
-					<!-- /Recompra / Crescer Mais / Total -->
+						</div>
+						<!-- /Your cart -->
 
-
-
-
-			<!-- Export options -->
-				<div class="panel panel-flat">
-					<div class="table-responsive">
-						<table class="table datatable-colvis-multi">
-						
-							<div class="datatable-header">
-
-								<form class="form-horizontal" action="#">
-									<div class="pull-left">
-										<div class="col-lg-5">
-											<select name="select" class="form-control">
-												<option value="opt2">Janeiro</option>
-												<option value="opt3">Fevereiro</option>
-												<option value="opt4">Março</option>
-												<option value="opt5">Abril</option>
-												<option value="opt6">Maio</option>
-												<option value="opt7">Junho</option>
-												<option value="opt8">Julho</option>
-												<option value="opt8">Agosto</option>
-												<option value="opt8">Setembro</option>
-												<option value="opt8">Outubro</option>
-												<option value="opt8">Novembro</option>
-												<option value="opt8">Dezembro</option>
-											</select>
-										</div>
-
-										<div class="col-lg-5">
-											<select name="select" class="form-control">
-												<option value="opt2">2015</option>
-												<option value="opt3">2016</option>
-												<option value="opt4">2017</option>
-												<option value="opt5">2018</option>
-											</select>
-										</div>
-
-										<div class="col-lg-2">
-											<button type="button" class="btn btn-info">OK</button>
-										</div>
-									</div>
-								</form>
-
-								<div class="dt-buttons btn-group">
-									<a class="btn btn-default buttons-copy buttons-html5 copyButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>Copiar</span></a>
-									<a class="btn btn-default buttons-csv buttons-html5 excelButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>Excel</span></a>
-									<a class="btn btn-default buttons-csv buttons-html5 csvButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>CSV</span></a>
-									<a class="btn btn-default buttons-print printButton" tabindex="0" aria-controls="DataTables_Table_0">
-										<span>Print</span></a>
-								</div>
-							</div>
-						
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>Usuário</th>
-									<th>Nome</th>
-									<th>Email</th>
-									<th>Data da Aticação</th>
-									<th>Gerar Bônus</th>
-									<th>Cidade</th>
-									<th>Valor</th>									
-									<th>Tipo</th>
-									<th>ID Pedido</th>
-									<th>Pagamento</th>
-								</tr>
-							</thead>
-
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>JohnDoe</td>
-									<td>JohnDoe Durant</td>
-									<td>johndoe@durant.com</td>
-									<td>10/02/2015</td>
-									<td><span class="label label-success">Sim</span></td>
-									<td>Belo Horizonte/MG </td>	
-									<td>77,00 </td>									
-									<td><span class="label label-success">Pedido</span></td>
-									<td>226659</td>	
-									<td>Paypal </td>	
-								</tr>
-
-								<tr>
-									<td>2</td>
-									<td>JohnDoe</td>
-									<td>JohnDoe Durant</td>
-									<td>johndoe@durant.com</td>
-									<td>10/02/2015</td>
-									<td><span class="label label-success">Sim</span></td>
-									<td>Contagem/MG </td>	
-									<td>80,00 </td>									
-									<td><span class="label label-success">Pedido</span></td>
-									<td>506659</td>	
-									<td>Aprovação Manual</td>	
-								</tr>		
-
-								<tr>
-									<td>3</td>
-									<td>DurantDoe</td>
-									<td>JohnDoe Durant</td>
-									<td>johndoe@durant.com</td>
-									<td>11/02/2015</td>
-									<td><span class="label label-success">Sim</span></td>
-									<td>Belo Horizonte/MG </td>	
-									<td>95,00 </td>									
-									<td><span class="label label-success">Pedido</span></td>
-									<td>706659</td>	
-									<td>Aprovação Manual</td>	
-								</tr>							
-
-								
-							</tbody>
-						</table>
 					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Cart Summary -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h4 class="text-semibold text-uppercase">RESUMO DO CARRINHO</h4>
+							</div>
+							<div class="panel-body">
+								<hr class="m-t-5">
+								<h5 class="text-uppercase">PREÇO TOTAL DO CARRINHO</h5>
+								<div class="x4 text-light">$356</div>
+								<hr class="m-t-5">
+								<a href="ecom_checkout.html" class="btn btn-success">Finalizar</a>
+								<button class="btn btn-default">Continuar Comprando</button>
+							</div>
+						</div>
+						<!-- /Cart Summary -->
+
+						<!-- Need support? -->
+						<div class="panel panel-flat">
+							<div class="panel-heading p-b-10">
+								<div class="panel-title">Precisa de suporte?</div>
+							</div>
+							<div class="panel-body">
+								<p class="text-black-400">Por favor entre em contato conosco se você tiver alguma dúvida.</p>
+								<button class="btn bg-info-a600 text-semibold">Entre em contato com o suporte</button>
+							</div>
+						</div>
+						<!-- /Need support? -->
+
+					</div>
+
 				</div>
-				<!-- /Export options -->
-
-
 
 			</div>
+
+
+
+
+
+
+			
 
 
 			<br>
@@ -308,6 +284,30 @@
 		<!-- /ScrolltoTop -->
 
 	</div>
+
+
+<!-- Page scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	
+	$( document ).ready(function() {
+
+		  $(".campo-juridico, .campo-fisico").hide(); 
+   			 $('#select-pessoa').change(function(){
+      		  if($('#select-pessoa').val() == 'selecionou-fisica') {
+        	   	 $('.campo-juridico').hide();
+				 $('.campo-fisico').show();
+      		  } else {
+                 $('.campo-fisico').hide();
+				 $('.campo-juridico').show();
+      	  } 
+		  });
+
+
+	});
+	
+</script>
+<!-- /Page scripts -->
 
 
 <!-- Layout settings -->
@@ -350,11 +350,10 @@
 <!-- /Global scripts -->
 
 <!-- Page scripts -->
-<script src="lib/js/plugins/tables/datatables/datatables.min.js"></script>
-<script src="lib/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
-<script src="lib/js/pages/tables/datatable_extension_export_options.js"></script>
-<script src="lib/js/pages/tables/datatable_extension_columns_selection.js"></script>
-<script src="lib/js/pages/forms/form_inputs_basic.js"></script>
+<script src="lib/js/forms/jquery.validate.js"></script>
+<script src="lib/js/pages/forms/form_validations.js"></script>
+<script src="lib/js/forms/formatter.min.js"></script>
+<script src="lib/js/pages/forms/form_controls_extended.js"></script>
 <!-- /Page scripts -->
 
 </body>
