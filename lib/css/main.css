@@ -15588,7 +15588,7 @@ a.fc-more:hover {
     display: none;
 }
 .highcharts-tooltip-box {
-    fill: #23B7E5 !important;
+    fill: #f9f9f9 !important;
     fill-opacity: 0.8 !important;
     stroke-width: 0;
     border-radius: 2px !important;
@@ -29613,7 +29613,7 @@ div#txt {
     text-align: center;
 }
 .pricingTable>ul>li {
-    width: 24%;
+    width: auto;
     max-width: 300px;
     padding-top: 0px;
     padding-right: 20px;

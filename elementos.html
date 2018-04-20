@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Crescer</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+						<i class="icon icon-transport-cart x3"></i></a>	
+						<span class="badge badge-success pull-right">4</span>
+					</li>
+
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+						<i class="icon-envelop5 x3"></i></a>	
+						<span class="badge badge-danger pull-right">4</span>
+					</li>
+
+					<!-- /Quick apps dropdown -->
+				
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-display4"></i> Título da Página
+					<br>
+					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
+					<i class="icon icon-arrow-left16 x1"></i>Voltar
+					</button>
+					
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+		
+
+
+
+
+		<div class="container-fluid page-content">
+			<div class="row col-md-12">			
+				<div class="panel panel-flat panel-body row text-center">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h1> <i class="icon icon-user-plus x6"></i></h1>
+						<h1 class="text-uppercase no-margin-b">Título da Página</h1>						
+					</div>					
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
+
+
+
+
+		<div class="container-fluid page-content">
+
+				<form class="form-horizontal form-validate" action="#">
+
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="panel-title">Inputs</div>
+								</div>
+								<div class="panel-body">
+									<fieldset>
+
+										<!-- Texto Básico -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Texto Básico <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="text" name="basic" class="form-control" required="required" placeholder="Text input validation">
+											</div>
+										</div>
+										<!-- /Texto Básico -->
+
+										<!-- Senha  -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Senha <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="password" name="password" id="password" class="form-control" required="required" placeholder="Minimum 8 characters allowed">
+											</div>
+										</div>
+										<!-- /Senha -->
+
+										<!-- Repeat password -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Repeat password <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="password" name="repeat_password" class="form-control" required="required" placeholder="Try different password">
+											</div>
+										</div>
+										<!-- /repeat password -->
+
+										<!-- Email  -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">email <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="email" name="email" class="form-control" id="emailid" required="required" placeholder="Enter a valid email address">
+											</div>
+										</div>
+										<!-- /email -->
+
+										<!-- Repita email -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Repita o email <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="email" name="confirm_email" class="form-control" required="required" placeholder="Enter a valid email address">
+											</div>
+										</div>
+										<!-- /repita email -->
+
+										<!-- Textarea -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Textarea <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<textarea rows="4" cols="5" name="textarea" class="form-control" required="required" placeholder="Default textarea"></textarea>
+											</div>
+										</div>
+										<!-- /Textarea -->
+
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="col-md-6 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="panel-title">Inputs</div>
+								</div>
+								<div class="panel-body">
+									<fieldset>
+								
+										<!-- Carregador de arquivos -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Carregador de arquivos <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="file" name="styled_file" class="file-styled-basic" required="required">
+											</div>
+										</div>
+										<!-- /Carregador de arquivos -->
+
+										<!-- Options -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Options <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<select name="default_select" class="form-control" required="required">
+													<option value="">Escolha uma opção</option>
+													<optgroup label="Alaskan/Hawaiian Time Zone">
+														<option value="AK">Alaska</option>
+														<option value="HI">Hawaii</option>
+														<option value="CA">California</option>
+													</optgroup>
+													<optgroup label="Mountain Time Zone">
+														<option value="AZ">Arizona</option>
+														<option value="CO">Colorado</option>
+														<option value="WY">Wyoming</option>
+													</optgroup>
+													<optgroup label="Central Time Zone">
+														<option value="AL">Alabama</option>
+														<option value="AR">Arkansas</option>
+														<option value="KY">Kentucky</option>
+													</optgroup>
+													<optgroup label="Eastern Time Zone">
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="FL">Florida</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+										<!-- /Options -->
+
+
+										<!--  caixas de seleção  -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Styled checkbox group <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="styled_checkbox" class="styled" required="required">
+														Sed ut perspiciatis
+													</label>
+												</div>
+
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="styled_checkbox" class="styled">
+														Ut enim ad minima
+													</label>
+												</div>
+
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="styled_checkbox" class="styled">
+														At vero eos et
+													</label>
+												</div>
+											</div>
+										</div>
+										<!-- / caixas de seleção  -->
+
+										<!-- Radio inputs -->
+										<div class="form-group">
+											<label class="control-label col-lg-4">Styled radio group <span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<div class="radio">
+													<label>
+														<input type="radio" name="styled_radio" class="styled" required="required">
+														Et harum quidem
+													</label>
+												</div>
+
+												<div class="radio">
+													<label>
+														<input type="radio" name="styled_radio" class="styled">
+														Quis autem vel
+													</label>
+												</div>
+
+												<div class="radio">
+													<label>
+														<input type="radio" name="styled_radio" class="styled">
+														Ut enim ad minima
+													</label>
+												</div>
+											</div>
+										</div>
+										<!-- /Radio inputs -->
+
+
+									</fieldset>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="row">
+
+					<!-- Botões -->
+                    <div class="col-md-6 col-sm-6">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Tamanho dos botões
+                                </div>
+                            </div>
+                          
+                            <div class="panel-body">
+                            <p>
+                            	<button type="button" class="btn btn-primary btn-xlg">
+                            		<i class="icon-comments position-left"></i> Tamanho Extra Grande
+                        		</button>
+                            </p>
+
+                            <p>
+                            	<button type="button" class="btn btn-danger btn-lg">
+                            		<i class="icon-comments position-left"></i> Tamanho Grande
+                            	</button>
+                            </p>
+                           
+                            <p>
+                            	<button type="button" class="btn btn-success">
+                            		<i class="icon-comments position-left"></i> Tamanho Padrão
+                            	</button>
+                            </p>
+                           
+                            <p>
+                            	<button type="button" class="btn btn-warning btn-sm">
+                            		<i class="icon-comments position-left"></i> Tamanho Pequeno
+                            	</button>
+                            </p>
+                           
+                            <p>
+                            	<button type="button" class="btn btn-info btn-xs">
+                            		<i class="icon-comments position-left"></i> Tamanho Mini
+                            	</button>
+                            </p>
+
+                            </div>
+                        </div>
+                    </div>
+					<!-- /Botões -->
+                  
+					<!-- Label -->
+                    <div class="col-md-6 col-sm-6">
+                        <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="3" class="active">Label</th>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%;">Default label</td>
+                                    <td style="width: 20%;"><span class="label label-default">Default</span></td>
+                                    <td>Estilo de rótulo padrão. Para usar, adicione <code>.label .label-default</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Primary label</td>
+                                    <td><span class="label label-primary">Primary</span></td>
+                                    <td>Alternativa contextual primária. Para usar, adicione <code>.label .label-primary</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Danger label</td>
+                                    <td><span class="label label-danger">Danger</span></td>
+                                    <td>Alternativa contextual de perigo. Para usar, adicione <code>.label .label-danger</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Success label</td>
+                                    <td><span class="label label-success">Success</span></td>
+                                    <td>Alternativa contextual de sucesso. Para usar, adicione <code>.label .label-success</code></td> 
+                                </tr>
+                                <tr>
+                                    <td>Warning label</td>
+                                    <td><span class="label label-warning">Warning</span></td>
+                                    <td>Alternativa contextual de aviso. Para usar, adicione <code>.label-warning</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Info label</td>
+                                    <td><span class="label label-info">Info</span></td>
+                                    <td>Alternativa contextual de informação. Para usar, adicione <code>.label .label-info</code></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <!-- Label -->
+            </div>
+
+
+
+
+
+
+
+
+
+			
+
+			
+
+
+			<div class="row m-t-20">
+
+			<!-- Painel branco -->
+		    <div class="col-md-4 col-sm-12">
+				<div class="panel panel-white">
+					<div class="panel-heading">
+						<div class="panel-title">Painel branco</div>
+					</div>
+
+					<div class="panel-body">
+						Painel branco usando a classe <code>.panel .panel-white</code> 
+
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					</div>
+				</div>						
+			</div>
+			<!-- /Painel branco -->
+
+			<!-- Painel Sucesso -->
+			<div class="col-md-4 col-sm-12">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<div class="panel-title">Painel Sucesso</div>
+				</div>
+
+				<div class="panel-body">
+					Painel de sucesso usando a classe<code>.panel .panel-success</code>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+			</div>
+			</div>
+ 			<!-- /Painel Sucesso -->
+
+			<!-- Painel Danger -->
+			<div class="col-md-4 col-sm-12">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<div class="panel-title">Painel Danger</div>
+				</div>
+
+				<div class="panel-body">
+					Painel de perigo usando a classe<code>.panel .panel-danger</code>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</div>
+			</div>
+			</div>
+			<!-- Painel Danger -->
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Left styled solid alerts</div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <h4>Primary alert</h4>
+                                <div class="alert bg-primary alert-styled-left">
+
+                                    <span class="text-semibold">Morning!</span> We're glad to <a href="#" class="alert-link">see you again</a> and wish you a nice day.
+                                </div>
+
+                                <h4>Danger alert</h4>
+                                <div class="alert bg-danger alert-styled-left">
+
+                                    <span class="text-semibold">Oh snap!</span> Change a few things up and <a href="#" class="alert-link">try submitting again</a>.
+                                </div>
+
+                                <h4>Success alert</h4>
+                                <div class="alert bg-success alert-styled-left">
+
+                                    <span class="text-semibold">Well done!</span> You successfully read <a href="#" class="alert-link">this important</a> alert message.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <h4>Primary alert</h4>
+                                <div class="alert alert-primary alert-styled-left">
+
+                                    <span class="text-semibold">Morning!</span> We're glad to <a href="#" class="alert-link">see you again</a> and wish you a nice day.
+                                </div>
+
+                                <h4>Danger alert</h4>
+                                <div class="alert alert-danger alert-styled-left alert-bordered">
+
+                                    <span class="text-semibold">Oh snap!</span> Change a few things up and <a href="#" class="alert-link">try submitting again</a>.
+                                </div>
+
+                                <h4>Success alert</h4>
+                                <div class="alert alert-success alert-styled-left alert-arrow-right alert-bordered">
+
+                                    <span class="text-semibold">Well done!</span> You successfully read <a href="#" class="alert-link">this important</a> alert message.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="panel panel-flat">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<tbody>
+								<!-- Posicionamento -->
+								<tr class="active">
+									<td colspan="2"><span class="">Posicionamento</span></td>
+								</tr>
+								<tr>
+									<td><code>.center-block</code></td>
+									<td>Definir um elemento para  <code>display: block</code>e centralizar via margem </td>
+								</tr>
+								
+								
+								<tr>
+									<td><code>.pull-left</code></td>
+									<td>Flutuar um elemento para o  <code>left</code>com uma classe </td>
+								</tr>
+								<tr>
+									<td><code>.pull-right</code></td>
+									<td>Flutuar um elemento para o  <code>right</code>com uma classe </td>
+								</tr>
+								<tr>
+									<td><code>.clearfix</code></td>
+									<td>Facilmente limpar flutuadores, adicionando  <code>.clearfix</code>ao elemento pai </td>
+								</tr>
+								<!-- /Posicionamento -->
+
+								<!-- Espaçamento -->
+								<tr class="active">
+									<td colspan="2"><span class="">Espaçamento </span></td>
+								</tr>
+								<tr>
+									<td><code>.m-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicione margem ao elemento em todos os lados </td>
+								</tr>
+								<tr>
+									<td><code>.m-t-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicione margem superior ao elemento </td>
+								</tr>
+								<tr>
+									<td><code>.m-b-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicione margem inferior ao elemento </td>
+								</tr>
+								<tr>
+									<td><code>.m-l-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicione margem esquerda ao elemento </td>
+								</tr>
+								<tr>
+									<td><code>.m-r-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicionar margem direita ao elemento </td>
+								</tr>
+								
+								
+								<tr>
+									<td><code>.p-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicionar preenchimento ao elemento em todos os lados </td>
+								</tr>
+								<tr>
+									<td><code>.p-t-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicionar preenchimento superior ao elemento </td>
+								</tr>
+								<tr>
+									<td><code>.p-b-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicione preenchimento inferior ao elemento </td>
+								</tr>
+								<tr>
+									<td><code>.p-l-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicionar preenchimento esquerdo ao elemento </td>
+								</tr>
+								<tr>
+									<td><code>.p-r-*</code><br><code>(*de 0 até 50)</code></td>
+									<td>Adicionar preenchimento direito ao elemento </td>
+								</tr>
+								
+								
+								<!-- Espaçamento -->
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+			<br>
+			<br>
+
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+
+		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+
+		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+
+<!-- Page scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	
+	$( document ).ready(function() {
+
+		  $(".campo-juridico, .campo-fisico").hide(); 
+   			 $('#select-pessoa').change(function(){
+      		  if($('#select-pessoa').val() == 'selecionou-fisica') {
+        	   	 $('.campo-juridico').hide();
+				 $('.campo-fisico').show();
+      		  } else {
+                 $('.campo-fisico').hide();
+				 $('.campo-juridico').show();
+      	  } 
+		  });
+
+
+	});
+	
+</script>
+<!-- /Page scripts -->
+
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/forms/jquery.validate.js"></script>
+<script src="lib/js/pages/forms/form_validations.js"></script>
+<script src="lib/js/forms/formatter.min.js"></script>
+<script src="lib/js/pages/forms/form_controls_extended.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>
