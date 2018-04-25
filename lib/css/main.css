@@ -10584,7 +10584,7 @@ a.list-group-item-danger:hover, a.list-group-item-danger:focus, .list-group-item
     font-smoothing: antialiased;
 }
 .icons-list a[data-toggle="dropdown"]:after {
-    //content: "";
+    content: "";
     speak: none;
     font-family: "icomoon";
     font-size: 16px;
@@ -39747,7 +39747,7 @@ td.nome {
 
 
 .label-warning {
-    background-color: #ff845d !important;
+    background-color: #ff6230 !important;
 }
 
 .h-termos-aceitos {
@@ -39923,4 +39923,12 @@ table.table.table-pedidos {
 
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
         display: -webkit-inline-box;
+}
+
+tfoot tr:nth-child(1) {
+    border-top: solid #8a8a8a;
+}
+
+.lock {
+    cursor: not-allowed;
 }
