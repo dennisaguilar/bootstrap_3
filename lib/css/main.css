@@ -7085,9 +7085,6 @@ body .menu .acc-parent.active .acc-icon:after {
     border-color: #FF5722;
     color: #a72800;
 }
-.alert-warning, .alert-warning .close {
-    color: #f83c00;
-}
 .alert-danger {
     background-color: #fee6e4;
     border-color: #F44336;
@@ -39931,4 +39928,14 @@ tfoot tr:nth-child(1) {
 
 .lock {
     cursor: not-allowed;
+}
+
+.faq-padding p {
+    margin-bottom: 40px;
+    padding: 0px 50px;
+}
+
+.faq-padding h3 {
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
