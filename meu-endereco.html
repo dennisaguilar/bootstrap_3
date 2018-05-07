@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Crescer</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+						<i class="icon icon-transport-cart x3"></i></a>	
+						<span class="badge badge-success pull-right">4</span>
+					</li>
+
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+						<i class="icon-envelop5 x3"></i></a>	
+						<span class="badge badge-danger pull-right">4</span>
+					</li>
+
+					<!-- /Quick apps dropdown -->
+				
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Nome Usuário <i class="icon-more2"></i><small>Tipo Usuári</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-display4"></i> Edição de Endereços
+					<br>
+					<button onclick="history.go(-1)" type=" button" class="btn btn-default btn-voltar">
+					<i class="icon icon-arrow-left16 x1"></i>Voltar
+					</button>
+					
+
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+			<div class="container-fluid page-content">
+			<div class="row">
+
+			<!-- Página -->
+			<div class="col-md-12">
+			<div class="panel panel-flat">
+			<div class="panel-body">
+			<div class="row text-center">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<h1> <i class="icon icon-home8 x6"></i></h1>
+					<h1 class="text-uppercase no-margin-b">Edição de Endereços</h1>						
+				</div>	
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+
+					<div class="row m-t-50 m-b-30">
+
+						<div class="col-md-1 col-sm-1 col-xs-0">												
+						</div>
+
+
+						<div class="col-md-10 col-sm-10 col-xs-12">
+
+
+					<div class="row">
+                    <div class="col-lg-4">
+                        <h4>Meu(s) Endereço(s) Cadastrado(s)</h4>
+                        <br>
+
+                        <div class="well b-g-disable">
+                        <h4 class="p-t-0 m-t-0">Endereço Principal</h4>
+                        RUA ALVARENGA PEIXOTO, 1366, APTO 1402<br>
+                        SANTO AGOSTINHO<br>
+                        CEP 30180-121 - BELO HORIZONTE, MG<br>                        
+                        </div>
+
+                        <div class="well b-g-disable">
+                        <h4 class="p-t-0 m-t-0" style="display: none">Endereço Principal</h4>
+                        RUA ALVARENGA PEIXOTO, 1366, APTO 1402<br>
+                        SANTO AGOSTINHO<br>
+                        CEP 30180-121 - BELO HORIZONTE, MG<br>     
+                        <button type="button" class="btn btn-default m-t-15">Definir como endereço principal</button>                   
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="col-lg-8 p-l-50">
+                        <h4>Editar Endereço</h4>
+                        <br>
+                        <form class="form-horizontal form-groups-bordered" method="POST" action="">
+                            <div class="form-group">
+                                <label for="cep" class="col-sm-3 control-label text-right">CEP</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <input id="cep" class="form-control" type="text" name="cep" value="" data-validate="require" placeholder="Digite seu CEP" required="">
+                                        <span id="btnBuscarCep" class="input-group-addon">Buscar</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="endereco" class="col-sm-3 control-label text-right">Endereço</label>
+                                <div class="col-sm-9"><input id="endereco" class="form-control" type="text" name="endereco" value="" data-validate="require" placeholder="Digite seu endereço" required=""></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="numero" class="col-sm-3 control-label text-right">Número</label>
+                                <div class="col-sm-9"><input id="numero" class="form-control" type="text" name="numero" value="" placeholder="Digite seu número" required=""></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="complemento" class="col-sm-3 control-label text-right">Complemento</label>
+                                <div class="col-sm-9"><input id="complemento" class="form-control" type="text" name="complemento" value="" placeholder="Digite seu compemento"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="bairro" class="col-sm-3 control-label text-right">Bairro</label>
+                                <div class="col-sm-9"><input id="bairro" class="form-control" type="text" name="bairro" value="" data-validate="require" placeholder="Digite seu bairro" required=""></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="estado" class="col-sm-3 control-label text-right">Estado</label>
+                                <div class="col-sm-9">
+                                    <select name="estado" id="estado" class="form-control" required="" tabindex="-1">
+										<option value="" selected="selected">--</option>
+										<option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+										<option value="DF">Distrito Federal</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="GO">Goiás</option>
+										<option value="MA">Maranhão</option>
+										<option value="MT">Mato Grosso</option>
+										<option value="MS">Mato Grosso do Sul</option>
+										<option value="MG">Minas Gerais</option>
+										<option value="PA">Pará</option>
+										<option value="PB">Paraíba</option>
+										<option value="PR">Paraná</option>
+										<option value="PE">Pernambuco</option>
+										<option value="PI">Piauí</option>
+										<option value="RJ">Rio de Janeiro</option>
+										<option value="RN">Rio Grande do Norte</option>
+										<option value="RS">Rio Grande do Sul</option>
+										<option value="RO">Rondônia</option>
+										<option value="RR">Roraima</option>
+										<option value="SC">Santa Catarina</option>
+										<option value="SP">São Paulo</option>
+										<option value="SE">Sergipe</option>
+										<option value="TO">Tocantins</option>
+									</select>                             
+								</div>
+                            </div>
+                           
+
+                            <div class="form-group">
+                                <label for="cidade" class="col-sm-3 control-label text-right">Cidade</label>
+                                <div class="col-sm-9">
+                                <select name="cidade" id="cidade" class="form-control" data-validate="require" required="" tabindex="-1">
+								<option value="" selected="selected">--</option>
+								</select>                                
+								</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="field-1" class="col-sm-3 control-label"> </label>
+                                <div class="col-sm-9">
+                                    <input id="submit" type="submit" class="btn btn-success" value="Salvar Dados">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+
+
+						</div>
+
+						
+
+						<div class="col-md-1 col-sm-1 col-xs-0">												
+						</div>
+					</div>
+
+
+
+				</div>								
+			</div>
+			</div>
+			</div>
+			</div>
+			<!-- /Página -->
+			</div>
+
+			</div>
+
+
+			<br>
+			<br>
+
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+
+		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+
+		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/forms/jquery.validate.js"></script>
+<script src="lib/js/pages/forms/form_validations.js"></script>
+<script src="lib/js/forms/formatter.min.js"></script>
+<script src="lib/js/pages/forms/form_controls_extended.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

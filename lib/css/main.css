@@ -7073,11 +7073,13 @@ body .menu .acc-parent.active .acc-icon:after {
     color: #409343;
 }
 .alert-info {
-    background-color: #8df2ff;
+background-color: #2196f3;
     border-color: #00BCD4;
-    color: #004f5a;
 }
-.alert-info, .alert-info .close {
+.alert.alert-info p {
+    color: #fff;
+}
+.alert-info .close {
     color: #0098ab;
 }
 .alert-warning {
@@ -8414,6 +8416,12 @@ li+.dropdown-header.highlight, .dropdown-header.highlight+li {
 }@media only screen and (min-width: 768px) {
     .elements-toggle {
     display: none;
+    }
+
+    .center-50 {
+    width: 50% !important; 
+    margin-left:  25% !important;
+    }
 }
 .panel-heading .elements .icons-list {
     margin-top: 4px;
@@ -8518,7 +8526,8 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox-inline, fieldset[disa
     -moz-box-shadow: none;
 }
 .form-control[disabled], .form-control[readonly] {
-    color: #EAEFF0;
+    color: #333;
+    background-color: #ececec;
 }
 .form-control[class*=bg-]:focus {
     border-color: transparent;
@@ -39715,10 +39724,6 @@ td.nome {
     min-width: 200px !important;
 }
 
-.center-50 {
-    width: 50% !important; 
-    margin-left:  25% !important;
-}
 
 .btn-voltar i {
     margin-top: 5px;
@@ -39938,4 +39943,8 @@ tfoot tr:nth-child(1) {
 .faq-padding h3 {
     margin-bottom: 20px;
     margin-left: 20px;
+}
+
+.b-g-disable {
+    background-color: #f7f7f7
 }
