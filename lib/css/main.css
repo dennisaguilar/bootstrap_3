@@ -28789,7 +28789,7 @@ div#txt {
     width: 100%;
     height: 580px;
     width: 100%;
-    height: 88vh;
+    height: 72vh;
     min-width: 280px;
     min-height: 300px;
     margin-top: 15px;
@@ -28813,7 +28813,7 @@ div#txt {
     width: 40%;
     height: 100%;
     float: left;
-    background: #1C2B36;
+    background: #484848;
     color: #6b94b3;
     overflow: hidden;
     position: relative;
@@ -28832,7 +28832,7 @@ div#txt {
 }
 @media screen and (max-width: 735px) {
     #frame #sidepanel {
-    width: 58px;
+    width: 100px;
     min-width: 58px;
 }
 }#frame #sidepanel #profile {
@@ -28902,7 +28902,7 @@ div#txt {
     margin: 15px;
     float: left;
     font-size: 18px;
-    color: #6b94b3;
+    color: #fff;
 }
 @media screen and (max-width: 735px) {
     #frame #sidepanel #profile .wrap p {
@@ -28912,7 +28912,7 @@ div#txt {
     margin-top: 23px;
     float: right;
     cursor: pointer;
-    color: #6b94b3;
+    color: #f0f3f4;
 }
 @media screen and (max-width: 735px) {
     #frame #sidepanel #profile .wrap i.expand-button {
@@ -29114,7 +29114,7 @@ div#txt {
     margin-bottom: 0px;
     margin-left: 15px;
     position: absolute;
-    color: #6b94b3;
+    color: #f0f3f4;
 }
 #frame #sidepanel #search input {
     width: 100%;
@@ -29124,7 +29124,7 @@ div#txt {
     padding-left: 46px;
     border: none;
     background: rgba(0, 0, 0, 0.05);
-    color: #6b94b3;
+    color: #f0f3f4;
 }
 #frame #sidepanel #search input::-webkit-input-placeholder {
     color: #6b94b3;
@@ -29140,10 +29140,10 @@ div#txt {
 }
 #frame #sidepanel #search input:focus {
     outline: none;
-    background: #17232c;
+    background: #333;
 }
 #frame #sidepanel #contacts {
-    height: calc(100% - 177px);
+    height: calc(100% - 137px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -29170,7 +29170,7 @@ div#txt {
     background: transparent;
 }
 #frame #sidepanel #contacts::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #ba0822;
 }
 #frame #sidepanel #contacts ul li.contact {
     padding: 15px 0px;
@@ -29186,11 +29186,11 @@ div#txt {
     padding-left: 8px;
 }
 }#frame #sidepanel #contacts ul li.contact:hover {
-    background: #2a4051;
+    background: #2b2b2b;
 }
 #frame #sidepanel #contacts ul li.contact.active {
-    background: #2a4051;
-    border-left: 5px solid #507b9b;
+    background: #2b2b2b;
+    border-left: 5px solid #b1afb0;
 }
 @media screen and (max-width: 735px) {
     #frame #sidepanel #contacts ul li.contact.active {
@@ -29244,10 +29244,6 @@ div#txt {
 }
 }#frame #sidepanel #contacts ul li.contact .wrap .meta {
     padding: 0;
-}
-@media screen and (max-width: 735px) {
-    #frame #sidepanel #contacts ul li.contact .wrap .meta {
-    display: none;
 }
 }#frame #sidepanel #contacts ul li.contact .wrap .meta p {
     margin-bottom: 0px;
@@ -29376,8 +29372,8 @@ div#txt {
 }
 @media screen and (max-width: 735px) {
     #frame .content {
-    width: calc(100% - 58px);
-    min-width: 240px !important;
+    width: calc(100% - 100px);
+    min-width: 180px !important;
 }
 }@media only screen and (min-width: 1024px) and (max-width: 1024px) {
     #frame .content {
@@ -29489,7 +29485,7 @@ div#txt {
     margin-left: 0px;
 }
 #frame .content .messages ul li.sent p {
-    background: #B7EEFF;
+    background: #f6f8f8;
     color: #1C2B36;
 }
 #frame .content .messages ul li.replies img {
@@ -29513,16 +29509,15 @@ div#txt {
     margin-bottom: 0px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
-    border-radius: 12px;
+    border-radius: 13px;
     padding: 6px 18px;
     display: inline-block;
-    max-width: 200px;
     line-height: 1.6;
     font-size: 11.4px;
 }
 @media screen and (min-width: 735px) {
     #frame .content .messages ul li p {
-    max-width: 300px;
+    max-width: 600px;
 }
 }@media only screen and (max-width: 359px) {
     #frame .content .messages ul li p {
@@ -39947,4 +39942,32 @@ tfoot tr:nth-child(1) {
 
 .b-g-disable {
     background-color: #f7f7f7
+}
+
+#frame div#sidepanel input::-webkit-input-placeholder {
+    color: #dde3e3 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+li.sent p {
+    margin-left: 10% !important;
+    max-width: 80% !important;
+}
+
+div#frame div#sidepanel div#profile i {
+    margin-left: 26px;
+    margin-top: 6px !important;
+}
+
+div#frame div#sidepanel p {
+    color: #fff !important;
+}
+
+body#top.left-aside-toggle aside.menu{
+    -webkit-box-shadow: 158px 0px 0px 27px rgba(0,0,0,0.61);
+    -moz-box-shadow: 158px 0px 0px 27px rgba(0,0,0,0.61);
+    box-shadow: 158px 0px 0px 27px rgba(0,0,0,0.61);
 }
