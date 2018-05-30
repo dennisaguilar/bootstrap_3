@@ -88,12 +88,12 @@
 
 					<!-- Quick apps dropdown -->
 
-					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="ecom_cart.html">
+					<li class="carrinho-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Carrinho de Compras" data-trigger="hover" data-content="Já comprou tudo? então finalize o seu pedido! :)"><a href="meu-carrinho.html">
 						<i class="icon icon-transport-cart x3"></i></a>	
 						<span class="badge badge-success pull-right">4</span>
 					</li>
 
-					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="emails.html">	
+					<li class="mensagens-topo hidden-xs m-r-15 m-t-7" data-popup="popover" data-placement="bottom" title="Mensagens" data-trigger="hover" data-content="Você tem 4 novas mensagens."><a href="mensagens.html">	
 						<i class="icon-envelop5 x3"></i></a>	
 						<span class="badge badge-danger pull-right">4</span>
 					</li>
@@ -448,7 +448,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<a href="meu-carrinho.html"><button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
@@ -481,7 +481,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<a href="meu-carrinho.html"><button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
@@ -514,7 +514,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<a href="meu-carrinho.html"><button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
@@ -547,7 +547,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button>
+										<a href="meu-carrinho.html"><button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right"><i class="icon-cart4 position-left"></i>Adicionar ao Carrinho</button></a>
 										<div class="clearfix"></div>
 									</div>
 								</div>
@@ -592,9 +592,9 @@
 		<!-- /Page Container ends -->
 
 		<!-- ScrolltoTop -->
-		<a class="btn-flutuante-comprar" href="#" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
+		<a class="btn-flutuante-comprar" href="loja.html" data-popup="tooltip" title="Comprar"><i class="icon icon-cart"></i></a>
 
-		<a class="btn-flutuante-cadastrar" href="#" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
+		<a class="btn-flutuante-cadastrar" href="cadastro-associado" data-popup="tooltip" title="Cadastrar"><i class="icon icon-plus3"></i></a>
 
 		<a id="scrollTop" href="#top" data-popup="tooltip" title="Subir"><i class="icon-arrow-up12"></i></a>
 		<!-- /ScrolltoTop -->
@@ -641,6 +641,8 @@
 <script src="lib/js/core/app/core.js"></script>
 <!-- /Global scripts -->
 
+<script src="lib/js/forms/touchspin.min.js"></script>
+<script src="lib/js/pages/forms/form_bootstrap_touchspin.js"></script>
 
 <!-- Page scripts -->
 <script src="lib/js/pages/ecom/ecom_product.js"></script>
@@ -648,7 +650,7 @@
 
 <!-- /Page scripts -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
 	<script>
 
@@ -666,10 +668,9 @@
 		});
 	});
 
-	</script>
+	</script> 
 
-<script src="lib/js/forms/touchspin.min.js"></script>
-<script src="lib/js/pages/forms/form_bootstrap_touchspin.js"></script>
+
 
 </body>
 </html>
